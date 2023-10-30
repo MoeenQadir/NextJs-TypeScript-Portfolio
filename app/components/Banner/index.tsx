@@ -47,18 +47,18 @@ const Banner = () => {
                         </div>
 
                         <div className='flex items-center justify-between pt-10 lg:pt-4'>
-                            <div className='flex gap-2'>
+                            <div className='flex gap-2 justify-center items-center'>
                                 <Image src="/assets/banner/linkind.svg" alt="check-image" width={30} height={30}
                                        className='smallImage'/>
                                 <p className='text-sm sm:text-lg font-normal text-black'>Linkedin</p>
                             </div>
-                            <div className='flex gap-2'>
+                            <div className='flex gap-2 justify-center items-center'>
                                 <Image src="/assets/banner/github.svg" alt="check-image" width={30} height={30}
                                        className='smallImage'/>
                                 <p className='text-sm sm:text-lg font-normal text-black'>Github</p>
                             </div>
-                            <div className='flex gap-2'>
-                                <Image src="/assets/banner/check-circle.svg" alt="check-image" width={30} height={30}
+                            <div className='flex gap-2 justify-center items-center'>
+                                <Image src="/assets/banner/email.svg" alt="check-image" width={30} height={30}
                                        className='smallImage'/>
                                 <p className='text-sm sm:text-lg font-normal text-black'>Email</p>
                             </div>

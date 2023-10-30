@@ -1,0 +1,71 @@
+Index: public/assets/banner/email.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/public/assets/banner/email.svg b/public/assets/banner/email.svg
+--- a/public/assets/banner/email.svg	(revision 39f66efcf3685e3537439bf763bcc594af720b16)
++++ b/public/assets/banner/email.svg	(date 1698703163916)
+@@ -1,0 +1,11 @@
++<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
++<defs>
++</defs>
++<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
++	<path d="M 75.546 78.738 H 14.455 C 6.484 78.738 0 72.254 0 64.283 V 25.716 c 0 -7.97 6.485 -14.455 14.455 -14.455 h 61.091 c 7.97 0 14.454 6.485 14.454 14.455 v 38.567 C 90 72.254 83.516 78.738 75.546 78.738 z M 14.455 15.488 c -5.64 0 -10.228 4.588 -10.228 10.228 v 38.567 c 0 5.64 4.588 10.229 10.228 10.229 h 61.091 c 5.64 0 10.228 -4.589 10.228 -10.229 V 25.716 c 0 -5.64 -4.588 -10.228 -10.228 -10.228 H 14.455 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(29,29,27); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
++	<path d="M 11.044 25.917 C 21.848 36.445 32.652 46.972 43.456 57.5 c 2.014 1.962 5.105 -1.122 3.088 -3.088 C 35.74 43.885 24.936 33.357 14.132 22.83 C 12.118 20.867 9.027 23.952 11.044 25.917 L 11.044 25.917 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(29,29,27); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
++	<path d="M 46.544 57.5 c 10.804 -10.527 21.608 -21.055 32.412 -31.582 c 2.016 -1.965 -1.073 -5.051 -3.088 -3.088 C 65.064 33.357 54.26 43.885 43.456 54.412 C 41.44 56.377 44.529 59.463 46.544 57.5 L 46.544 57.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(29,29,27); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
++	<path d="M 78.837 64.952 c -7.189 -6.818 -14.379 -13.635 -21.568 -20.453 c -2.039 -1.933 -5.132 1.149 -3.088 3.088 c 7.189 6.818 14.379 13.635 21.568 20.453 C 77.788 69.973 80.881 66.89 78.837 64.952 L 78.837 64.952 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(29,29,27); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
++	<path d="M 14.446 68.039 c 7.189 -6.818 14.379 -13.635 21.568 -20.453 c 2.043 -1.938 -1.048 -5.022 -3.088 -3.088 c -7.189 6.818 -14.379 13.635 -21.568 20.453 C 9.315 66.889 12.406 69.974 14.446 68.039 L 14.446 68.039 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(29,29,27); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
++</g>
++</svg>
+\ No newline at end of file
+Index: app/components/Banner/index.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import Image from 'next/image';\r\n\r\nconst Banner = () => {\r\n\r\n    return (\r\n        <div id=\"home-section\" className='bg-lightkblue'>\r\n            <div className=\"mx-auto max-w-7xl pt-20 sm:pb-24 px-6\">\r\n\r\n                <div className='grid grid-cols-1 lg:grid-cols-12 space-x-1'>\r\n\r\n                    <div className='col-span-6 flex flex-col justify-evenly'>\r\n                        <div className='flex gap-2 mx-auto lg:mx-0'>\r\n                            <Image src=\"/assets/banner/check.svg\" alt=\"check-image\" width={20} height={20}/>\r\n                            <h3 className='text-kellygreen text-sm font-semibold text-center lg:text-start'>3+ years of\r\n                                industry experience</h3>\r\n                        </div>\r\n                        <h1 className='text-midnightblue text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0'>\r\n                            Hello,\r\n                            I Am Moeen\r\n                            Software Developer</h1>\r\n                        <h3 className='text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-0'>Build\r\n                            Experienced graduate software engineer with 3+ years of industry experience, specializing in\r\n                            full stack Software Development.</h3>\r\n                        {/*<div className=\"relative text-white focus-within:text-white flex flex-row-reverse input-shadow rounded-full pt-5 lg:pt-0\">*/}\r\n                        {/*<input type=\"Email address\" name=\"q\"*/}\r\n                        {/*       className=\"py-6 lg:py-8 text-lg w-full text-black opacity-75 rounded-full pl-8 focus:outline-none focus:text-black\"*/}\r\n                        {/*       placeholder=\"search courses...\" autoComplete=\"off\"/>*/}\r\n                        {/*<div className=\"absolute inset-y-0 right-0 flex items-center pr-2 pt-5 lg:pt-0\">*/}\r\n                        {/*    <button type=\"submit\"*/}\r\n                        {/*            className=\"p-3 lg:p-5 focus:outline-none focus:shadow-outline bg-ultramarine hover:bg-midnightblue duration-150 ease-in-out rounded-full\">*/}\r\n                        {/*        <Image src={'/assets/banner/search.svg'} alt=\"inputicon\" width={30} height={30}/>*/}\r\n                        {/*    </button>*/}\r\n                        {/*</div>*/}\r\n\r\n                        {/*</div>*/}\r\n                        <div className={\"flex justify-start\"}>\r\n                            <div className={\"flex justify-center\"}>\r\n                                <button\r\n                                    className=\"text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#b3d7fb] hover:text-white hover:bg-[#6556ff]\">\r\n                                    Download CV\r\n                                </button>\r\n                                <button\r\n                                    className=\"text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#ffb900] hover:text-white hover:bg-[#6556ff]\">\r\n                                   Hire Me\r\n                                </button>\r\n                            </div>\r\n                        </div>\r\n\r\n                        <div className='flex items-center justify-between pt-10 lg:pt-4'>\r\n                            <div className='flex gap-2'>\r\n                                <Image src=\"/assets/banner/linkind.svg\" alt=\"check-image\" width={30} height={30}\r\n                                       className='smallImage'/>\r\n                                <p className='text-sm sm:text-lg font-normal text-black'>Linkedin</p>\r\n                            </div>\r\n                            <div className='flex gap-2'>\r\n                                <Image src=\"/assets/banner/github.svg\" alt=\"check-image\" width={30} height={30}\r\n                                       className='smallImage'/>\r\n                                <p className='text-sm sm:text-lg font-normal text-black'>Github</p>\r\n                            </div>\r\n                            <div className='flex gap-2'>\r\n                                <Image src=\"/assets/banner/check-circle.svg\" alt=\"check-image\" width={30} height={30}\r\n                                       className='smallImage'/>\r\n                                <p className='text-sm sm:text-lg font-normal text-black'>Email</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div className='col-span-6 flex justify-center'>\r\n                        <Image src=\"/assets/banner/mahila.png\" alt=\"nothing\" width={1000} height={805}/>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    )\r\n}\r\n\r\nexport default Banner;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/components/Banner/index.tsx b/app/components/Banner/index.tsx
+--- a/app/components/Banner/index.tsx	(revision 39f66efcf3685e3537439bf763bcc594af720b16)
++++ b/app/components/Banner/index.tsx	(date 1698703242935)
+@@ -47,18 +47,18 @@
+                         </div>
+ 
+                         <div className='flex items-center justify-between pt-10 lg:pt-4'>
+-                            <div className='flex gap-2'>
++                            <div className='flex gap-2 justify-center items-center'>
+                                 <Image src="/assets/banner/linkind.svg" alt="check-image" width={30} height={30}
+                                        className='smallImage'/>
+                                 <p className='text-sm sm:text-lg font-normal text-black'>Linkedin</p>
+                             </div>
+-                            <div className='flex gap-2'>
++                            <div className='flex gap-2 justify-center items-center'>
+                                 <Image src="/assets/banner/github.svg" alt="check-image" width={30} height={30}
+                                        className='smallImage'/>
+                                 <p className='text-sm sm:text-lg font-normal text-black'>Github</p>
+                             </div>
+-                            <div className='flex gap-2'>
+-                                <Image src="/assets/banner/check-circle.svg" alt="check-image" width={30} height={30}
++                            <div className='flex gap-2 justify-center items-center'>
++                                <Image src="/assets/banner/email.svg" alt="check-image" width={30} height={30}
+                                        className='smallImage'/>
+                                 <p className='text-sm sm:text-lg font-normal text-black'>Email</p>
+                             </div>
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1698702687326)
++++ b/.idea/vcs.xml	(date 1698702687326)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
