@@ -59,8 +59,8 @@ const MultipleItems = () => {
             slidesToScroll: 2,
             arrows: false,
             autoplay: true,
-            speed: 500,
-            autoplaySpeed: 2000,
+            speed: 4000,
+            autoplaySpeed: 4000,
             cssEase: "linear",
             responsive: [
                 {
