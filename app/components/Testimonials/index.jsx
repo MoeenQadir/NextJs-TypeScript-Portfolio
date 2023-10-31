@@ -6,14 +6,8 @@ import Image from "next/image";
 
 // CAROUSEL DATA
 
-interface DataType {
-    profession: string;
-    comment: string;
-    imgSrc: string;
-    name: string;
-}
 
-const postData: DataType[] = [
+const postData = [
     {
         name: "Robert Fox",
         profession: 'CEO, Parkview Int.Ltd',
@@ -55,9 +49,7 @@ const postData: DataType[] = [
 // CAROUSEL SETTINGS
 
 
-export default class MultipleItems extends Component {
-
-    render() {
+const MultipleItems = () => {
         const settings = {
             dots: true,
             dotsClass: "slick-dots",
@@ -66,7 +58,7 @@ export default class MultipleItems extends Component {
             // centerMode: true,
             slidesToScroll: 2,
             arrows: false,
-            autoplay: false,
+            autoplay: true,
             speed: 500,
             autoplaySpeed: 2000,
             cssEase: "linear",
@@ -105,9 +97,9 @@ export default class MultipleItems extends Component {
             <div className="pt-40 pb-10 sm:pb-32 lg:py-32" id="testimonial">
                 <div className='mx-auto max-w-7xl sm:py-4 lg:px-8'>
                     <Slider {...settings}>
-                        {postData.map((items, i) => (
-                            <div key={i}>
-                                <div className={`bg-white m-4 p-5 my-20 relative ${i % 2 ? 'middleDiv' : 'testimonial-shadow'}`}>
+                        {postData.map((items) => (
+                            <div >
+                                <div className={`bg-white m-4 p-5 my-20 relative ${1 % 2 ? 'middleDiv' : 'testimonial-shadow'}`}>
                                     <div className="absolute top-[-45px]">
                                         <Image src={items.imgSrc} alt={items.imgSrc} width={100} height={100} className="inline-block" />
                                     </div>
@@ -134,5 +126,5 @@ export default class MultipleItems extends Component {
             </div>
 
         );
-    }
-}
+    };
+export default MultipleItems
