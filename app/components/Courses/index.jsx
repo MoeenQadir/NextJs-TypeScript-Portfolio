@@ -72,9 +72,7 @@ const postData = [
 // CAROUSEL SETTINGS
 
 
-export default class MultipleItems extends Component {
-
-    render() {
+const MultipleItems = () => {
         const settings = {
             dots: false,
             infinite: true,
@@ -175,4 +173,4 @@ export default class MultipleItems extends Component {
 
         );
     }
-}
+export default MultipleItems
