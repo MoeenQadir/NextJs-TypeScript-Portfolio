@@ -5,20 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { StarIcon } from '@heroicons/react/24/solid'
 
-// CAROUSEL DATA
 
-interface DataType {
-    heading: string;
-    heading2: string;
-    imgSrc: string;
-    name: string;
-    students: number;
-    classes: number;
-    price: number;
-    rating: number;
-}
-
-const postData: DataType[] = [
+const postData = [
     {
         heading: 'Full stack modern',
         heading2: 'javascript',
@@ -120,6 +108,7 @@ export default class MultipleItems extends Component {
         };
 
 
+        // @ts-ignore
         return (
             <div id="courses">
                 <div className='mx-auto max-w-7xl sm:py-8 px-4 lg:px-8 '>
@@ -131,9 +120,8 @@ export default class MultipleItems extends Component {
 
 
                     <Slider {...settings}>
-                        {postData.map((items, i) => (
-                            <div key={i}>
-
+                        {postData.map((items) => (
+                            <div>
                                 <div className='bg-white m-3 px-3 pt-3 pb-12 my-20 shadow-courses rounded-2xl'>
                                     <div className="relative rounded-3xl">
                                         <Image src={items.imgSrc} alt="gaby" width={389} height={262} className="m-auto clipPath" />
