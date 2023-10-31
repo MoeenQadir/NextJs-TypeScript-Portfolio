@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="487df5dd-2b13-49e2-a617-a94c41fbbd75" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Mentor/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Mentor/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Mentor/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Mentor/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,9 @@
       <recent name="E:\portfolio\public\assets\banner" />
       <recent name="E:\portfolio\public\assets\logo" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\portfolio\app\components" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -56,7 +60,7 @@
       <updated>1698614501845</updated>
       <workItem from="1698614505205" duration="1706000" />
       <workItem from="1698686652429" duration="16516000" />
-      <workItem from="1698755294295" duration="490000" />
+      <workItem from="1698755294295" duration="2023000" />
     </task>
     <servers />
   </component>

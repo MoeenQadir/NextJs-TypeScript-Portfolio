@@ -84,50 +84,43 @@ const ManageData = [
 ];
 
 
-function SampleNextArrow(props: { className: any; style: any; onClick: any; }) {
-    const {className, style, onClick} = props;
-    return (
-        <div
-            className={className}
-            style={{
-                ...style,
-                display: "flex",
-                justifyContent: "center",
-                position: 'absolute',
-                alignItems: "center",
-                background: "#D5EFFA",
-                padding: "28px",
-                borderRadius: "30px",
-                border: "1px solid #1A21BC"
-            }}
-            onClick={onClick}
-        />
-    );
-}
+const SampleNextArrow = ({ className, style, onClick }) => (
+    <div
+        className={className}
+        style={{
+            ...style,
+            display: 'flex',
+            justifyContent: 'center',
+            position: 'absolute',
+            alignItems: 'center',
+            background: '#D5EFFA',
+            padding: '28px',
+            borderRadius: '30px',
+            border: '1px solid #1A21BC',
+        }}
+        onClick={onClick}
+    />
+);
 
-function SamplePrevArrow(props: { className: any; style: any; onClick: any; }) {
-    const {className, style, onClick} = props;
-    return (
-        <div
-            className={className}
-            style={{
-                ...style,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                background: "#D5EFFA",
-                padding: "28px",
-                borderRadius: "30px",
-                border: "1px solid #1A21BC"
-            }}
-            onClick={onClick}
-        />
-    );
-}
+const SamplePrevArrow = ({ className, style, onClick }) => (
+    <div
+        className={className}
+        style={{
+            ...style,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            background: '#D5EFFA',
+            padding: '28px',
+            borderRadius: '30px',
+            border: '1px solid #1A21BC',
+        }}
+        onClick={onClick}
+    />
+);
 
 
-export default class MultipleItems extends Component {
-    render() {
+const MultipleItems = () => {
         const settings = {
             dots: true,
             infinite: true,
@@ -226,7 +219,7 @@ export default class MultipleItems extends Component {
 
                     <Slider {...settings}>
                         {postData.map((items) => (
-                            <div key={i}>
+                            <div>
                                 <div className='m-3 py-4 md:my-2 text-center'>
                                     <div className="relative">
                                         <img src={items.imgSrc} alt="user-image"
@@ -249,7 +242,7 @@ export default class MultipleItems extends Component {
                     </Slider>
                     <Slider {...oppositesettings}>
                         {ManageData.map((items) => (
-                            <div key={i}>
+                            <div>
                                 <div className='m-3 py-4 md:my-2 text-center'>
                                     <div className="relative">
                                         <img src={items.imgSrc} alt="user-image"
@@ -276,4 +269,4 @@ export default class MultipleItems extends Component {
 
         );
     }
-}
+export default MultipleItems
