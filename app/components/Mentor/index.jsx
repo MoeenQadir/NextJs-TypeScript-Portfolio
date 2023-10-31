@@ -5,14 +5,7 @@ import Image from "next/image";
 
 // CAROUSEL DATA
 
-interface DataType {
-    profession: string;
-    name: string;
-    imgSrc: string;
-    years: string;
-}
-
-const postData: DataType[] = [
+const postData = [
     {
         profession: 'Crafting Seamless Digital Experiences with 3 Years of Full Stack Development',
         name: 'Full Stack Development',
@@ -51,7 +44,7 @@ const postData: DataType[] = [
     },
 ];
 
-const ManageData: DataType[] = [
+const ManageData = [
     {
         profession: 'Collaborating Efficiently with 3 Years of GitHub Expertise',
         name: 'GitHub',
@@ -90,8 +83,6 @@ const ManageData: DataType[] = [
     },
 ];
 
-
-// CAROUSEL SETTINGS
 
 function SampleNextArrow(props: { className: any; style: any; onClick: any; }) {
     const {className, style, onClick} = props;
@@ -229,18 +220,21 @@ export default class MultipleItems extends Component {
             <div className="py-10 sm:py-24 bg-paleblue" id="mentor">
 
                 <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 px-4 lg:px-8 relative'>
-                    <h2 className="lh-82 text-midnightblue text-4xl md:text-55xl text-center md:text-start font-semibold">Top Technologies
-                         <br/> working on.</h2>
+                    <h2 className="lh-82 text-midnightblue text-4xl md:text-55xl text-center md:text-start font-semibold">Top
+                        Technologies
+                        <br/> working on.</h2>
 
                     <Slider {...settings}>
-                        {postData.map((items, i) => (
+                        {postData.map((items) => (
                             <div key={i}>
                                 <div className='m-3 py-4 md:my-2 text-center'>
                                     <div className="relative">
                                         <img src={items.imgSrc} alt="user-image"
-                                               className="inline-block m-auto my-14 h-44 w-44 rounded-full"/>
-                                        <div className="absolute right-[84px] bottom-[102px] bg-[#1fb141] rounded-full p-4">
-                                            <div className={"h-8 flex justify-center items-center text-white w-8 rounded-full"}>
+                                             className="inline-block m-auto my-14 h-44 w-44 rounded-full"/>
+                                        <div
+                                            className="absolute right-[84px] bottom-[102px] bg-[#1fb141] rounded-full p-4">
+                                            <div
+                                                className={"h-8 flex justify-center items-center text-white w-8 rounded-full"}>
                                                 <h1>{items.years} years</h1>
                                             </div>
                                         </div>
@@ -254,14 +248,16 @@ export default class MultipleItems extends Component {
                         ))}
                     </Slider>
                     <Slider {...oppositesettings}>
-                        {ManageData.map((items, i) => (
+                        {ManageData.map((items) => (
                             <div key={i}>
                                 <div className='m-3 py-4 md:my-2 text-center'>
                                     <div className="relative">
                                         <img src={items.imgSrc} alt="user-image"
                                              className="inline-block m-auto my-14 h-44 w-44 rounded-full"/>
-                                        <div className="absolute right-[84px] bottom-[102px] bg-[#1fb141] rounded-full p-4">
-                                            <div className={"h-8 flex justify-center items-center text-white w-8 rounded-full"}>
+                                        <div
+                                            className="absolute right-[84px] bottom-[102px] bg-[#1fb141] rounded-full p-4">
+                                            <div
+                                                className={"h-8 flex justify-center items-center text-white w-8 rounded-full"}>
                                                 <h1>{items.years} years</h1>
                                             </div>
                                         </div>
