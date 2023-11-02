@@ -21,22 +21,10 @@ const Banner = () => {
                         <h3 className='text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-0'>Build
                             Experienced graduate software engineer with 3+ years of industry experience, specializing in
                             full stack Software Development.</h3>
-                        {/*<div className="relative text-white focus-within:text-white flex flex-row-reverse input-shadow rounded-full pt-5 lg:pt-0">*/}
-                        {/*<input type="Email address" name="q"*/}
-                        {/*       className="py-6 lg:py-8 text-lg w-full text-black opacity-75 rounded-full pl-8 focus:outline-none focus:text-black"*/}
-                        {/*       placeholder="search courses..." autoComplete="off"/>*/}
-                        {/*<div className="absolute inset-y-0 right-0 flex items-center pr-2 pt-5 lg:pt-0">*/}
-                        {/*    <button type="submit"*/}
-                        {/*            className="p-3 lg:p-5 focus:outline-none focus:shadow-outline bg-ultramarine hover:bg-midnightblue duration-150 ease-in-out rounded-full">*/}
-                        {/*        <Image src={'/assets/banner/search.svg'} alt="inputicon" width={30} height={30}/>*/}
-                        {/*    </button>*/}
-                        {/*</div>*/}
-
-                        {/*</div>*/}
                         <div className={"flex justify-start me-16 sm:justify-center md:justify-center lg:justify-start"}>
                             <div className={"flex justify-center flex-col gap-5 mt-4 sm:flex-col md:flex-row items-center lg:flex-row"}>
                                 <button
-                                    className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#b3d7fb] hover:text-white hover:bg-[#184a79]">
+                                    className="text-blue text-lg font-medium ml-9 py-5 px-12 transition duration-150 ease-in-out leafbutton bg-[#b3d7fb] hover:text-white hover:bg-[#184a79]">
                                     Download CV
                                 </button>
                                 <button
