@@ -13,6 +13,7 @@ const navigation: NavigationItem[] = [
   { name: 'Mentor', href: '#mentor', current: false },
   { name: 'Group', href: '#/', current: false },
   { name: 'Testimonial', href: '#testimonial', current: false },
+  { name: 'Contact', href: '#contact', current: false },
 ]
 
 function classNames(...classes: string[]) {
