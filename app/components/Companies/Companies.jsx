@@ -35,8 +35,7 @@ const data = [
 
 
 // CAROUSEL SETTINGS
-export default class MultipleItems extends Component {
-    render() {
+const Companies = () => {
         const settings = {
             dots: false,
             infinite: true,
@@ -98,4 +97,4 @@ export default class MultipleItems extends Component {
 
         )
     }
-}
+export default Companies
