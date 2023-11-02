@@ -21,16 +21,20 @@ const Banner = () => {
                         <h3 className='text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-0'>Build
                             Experienced graduate software engineer with 3+ years of industry experience, specializing in
                             full stack Software Development.</h3>
-                        <div className={"flex justify-start me-16 sm:justify-center md:justify-center lg:justify-start"}>
-                            <div className={"flex justify-center flex-col gap-5 mt-4 sm:flex-col md:flex-row items-center lg:flex-row"}>
+                        <div
+                            className={"flex justify-start me-16 sm:justify-center md:justify-center lg:justify-start"}>
+                            <div
+                                className={"flex justify-center flex-col gap-5 mt-4 sm:flex-col md:flex-row items-center lg:flex-row"}>
                                 <button
                                     className="text-blue text-lg font-medium ml-9 py-5 px-12 transition duration-150 ease-in-out leafbutton bg-[#b3d7fb] hover:text-white hover:bg-[#184a79]">
                                     Download CV
                                 </button>
-                                <button
-                                    className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#ffb900] hover:text-white hover:bg-[#184a79]">
-                                   Hire Me
-                                </button>
+                                <a href="#contact">
+                                    <button
+                                        className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#ffb900] hover:text-white hover:bg-[#184a79]">
+                                        Hire Me
+                                    </button>
+                                </a>
                             </div>
                         </div>
 

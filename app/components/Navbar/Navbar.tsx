@@ -1,7 +1,7 @@
-import { Disclosure } from '@headlessui/react';
+import {Disclosure} from '@headlessui/react';
 import Link from 'next/link';
-import React, { useState } from 'react';
-import { Bars3Icon } from '@heroicons/react/24/outline';
+import React, {useState} from 'react';
+import {Bars3Icon} from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Signdialog from "./Signdialog";
@@ -14,18 +14,18 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'Home', href: '#/', current: true },
-    { name: 'Technologies', href: '#mentor', current: false },
-    { name: 'Projects', href: '#courses', current: false },
-    { name: 'Testimonial', href: '#testimonial', current: false },
-    { name: 'Contact', href: '#contact', current: false },
+    {name: 'Home', href: '#/', current: true},
+    {name: 'Technologies', href: '#mentor', current: false},
+    {name: 'Projects', href: '#courses', current: false},
+    {name: 'Testimonial', href: '#testimonial', current: false},
+    {name: 'Contact', href: '#contact', current: false},
 ];
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ');
 }
 
-const CustomLink = ({ href, onClick, children }: { href: string; onClick: () => void; children: React.ReactNode }) => {
+const CustomLink = ({href, onClick, children}: { href: string; onClick: () => void; children: React.ReactNode }) => {
     return (
         <Link href={href} passHref>
             <span
@@ -56,19 +56,20 @@ const Navbar = () => {
                         <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
 
                             {/* LOGO */}
-
-                            <div className="flex flex-shrink-0 items-center">
-                                <img
-                                    className="block  h-56 w-48  lg:hidden"
-                                    src={'/assets/logo/logo.jpg'}
-                                    alt="dsign-logo"
-                                />
-                                <img
-                                    className="hidden h-56 w-48 lg:block"
-                                    src={'/assets/logo/logo.jpg'}
-                                    alt="dsign-logo"
-                                />
-                            </div>
+                            <Link href="/">
+                                <div className="flex flex-shrink-0 items-center">
+                                    <img
+                                        className="block  h-56 w-48  lg:hidden"
+                                        src={'/assets/logo/logo.jpg'}
+                                        alt="dsign-logo"
+                                    />
+                                    <img
+                                        className="hidden h-56 w-48 lg:block"
+                                        src={'/assets/logo/logo.jpg'}
+                                        alt="dsign-logo"
+                                    />
+                                </div>
+                            </Link>
 
                             {/* LINKS */}
 
@@ -102,7 +103,7 @@ const Navbar = () => {
 
                         {/* REGISTER DIALOG */}
 
-                        <Registerdialog />
+                        <Registerdialog/>
 
 
                         {/* DRAWER FOR MOBILE VIEW */}
@@ -110,13 +111,13 @@ const Navbar = () => {
                         {/* DRAWER ICON */}
 
                         <div className='block lg:hidden'>
-                            <Bars3Icon className="block h-6 w-6" aria-hidden="true" onClick={() => setIsOpen(true)} />
+                            <Bars3Icon className="block h-6 w-6" aria-hidden="true" onClick={() => setIsOpen(true)}/>
                         </div>
 
                         {/* DRAWER LINKS DATA */}
 
                         <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-                            <Drawerdata />
+                            <Drawerdata/>
                         </Drawer>
 
 

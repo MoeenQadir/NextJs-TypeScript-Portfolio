@@ -113,7 +113,7 @@ const MultipleItems = () => {
 
                     <div className="sm:flex justify-between items-center">
                         <h3 className="text-[#184a79] text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Recent Projects</h3>
-                        <Link href={'/'} className="text-Blueviolet text-lg font-medium space-links">Explore more&nbsp;&gt;&nbsp;</Link>
+                        {/*<Link href={'/'} className="text-Blueviolet text-lg font-medium space-links">Explore more&nbsp;&gt;&nbsp;</Link>*/}
                     </div>
 
 
@@ -123,8 +123,8 @@ const MultipleItems = () => {
                                 <div className='bg-white m-3 px-3 pt-3 pb-12 my-20 shadow-courses rounded-2xl'>
                                     <div className="relative rounded-3xl">
                                         <Image src={items.imgSrc} alt="gaby" width={389} height={262} className="m-auto clipPath" />
-                                        <div className="absolute right-5 -bottom-2 bg-ultramarine rounded-full p-6">
-                                            <h3 className="text-white uppercase text-center text-sm font-medium">best <br /> seller</h3>
+                                        <div className="absolute right-5 -bottom-2 bg-[#184a79] rounded-full p-6">
+                                            <h3 className="text-white uppercase text-center text-sm font-medium">Top <br /> Rated</h3>
                                         </div>
                                     </div>
 
@@ -136,18 +136,12 @@ const MultipleItems = () => {
                                         </div>
 
                                         <div className="flex justify-between items-center py-6">
-                                            <div className="flex gap-4">
-                                                <h3 className="text-red text-22xl font-medium">{items.rating}</h3>
-                                                <div className="flex">
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                </div>
+                                            <div className="flex gap-4 justify-center items-center cursor-pointer">
+                                                    <Image src="/assets/banner/github.svg" alt="check-image" width={50} height={50}
+                                                           className='smallImage'/>
                                             </div>
                                             <div>
-                                                <h3 className="text-3xl font-medium">${items.price}</h3>
+                                                <h3 className="text-md font-medium cursor-pointer">Live Preview</h3>
                                             </div>
                                         </div>
 
