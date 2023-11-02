@@ -14,7 +14,7 @@ const Banner = () => {
                             <h3 className='text-kellygreen text-sm font-semibold text-center lg:text-start'>3+ years of
                                 industry experience</h3>
                         </div>
-                        <h1 className='text-midnightblue text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0'>
+                        <h1 className='text-[#184a79] text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0'>
                             Hello,
                             I Am Moeen
                             Software Developer</h1>
@@ -36,11 +36,11 @@ const Banner = () => {
                         <div className={"flex justify-start"}>
                             <div className={"flex justify-center"}>
                                 <button
-                                    className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#b3d7fb] hover:text-white hover:bg-[#6556ff]">
+                                    className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#b3d7fb] hover:text-white hover:bg-[#184a79]">
                                     Download CV
                                 </button>
                                 <button
-                                    className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#ffb900] hover:text-white hover:bg-[#6556ff]">
+                                    className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#ffb900] hover:text-white hover:bg-[#184a79]">
                                    Hire Me
                                 </button>
                             </div>

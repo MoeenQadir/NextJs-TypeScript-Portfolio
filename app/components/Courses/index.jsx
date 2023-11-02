@@ -112,7 +112,7 @@ const MultipleItems = () => {
                 <div className='mx-auto max-w-7xl sm:py-8 px-4 lg:px-8 '>
 
                     <div className="sm:flex justify-between items-center">
-                        <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Recent Projects</h3>
+                        <h3 className="text-[#184a79] text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Recent Projects</h3>
                         <Link href={'/'} className="text-Blueviolet text-lg font-medium space-links">Explore more&nbsp;&gt;&nbsp;</Link>
                     </div>
 
@@ -129,8 +129,8 @@ const MultipleItems = () => {
                                     </div>
 
                                     <div className="px-3">
-                                        <h4 className='text-2xl font-bold pt-6 text-black'>{items.heading}</h4>
-                                        <h4 className='text-2xl font-bold pt-1 text-black'>{items.heading2}</h4>
+                                        <h4 className='text-2xl font-bold pt-6 text-[#184a79]'>{items.heading}</h4>
+                                        <h4 className='text-2xl font-bold pt-1 text-[#184a79]'>{items.heading2}</h4>
                                         <div>
                                             <h3 className='text-base font-normal pt-6 opacity-75'>{items.name}</h3>
                                         </div>

@@ -213,7 +213,7 @@ const MultipleItems = () => {
             <div className="py-10 sm:py-24 bg-paleblue" id="mentor">
 
                 <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 px-4 lg:px-8 relative'>
-                    <h2 className="lh-82 text-midnightblue text-4xl md:text-55xl text-center md:text-start font-semibold">Top
+                    <h2 className="lh-82 text-[#184a79] text-4xl md:text-55xl text-center md:text-start font-semibold">Top
                         Technologies
                         <br/> working on.</h2>
 
@@ -233,7 +233,7 @@ const MultipleItems = () => {
                                         </div>
                                     </div>
                                     <div className="-mt-10">
-                                        <h3 className='text-2xl font-semibold text-lightblack'>{items.name}</h3>
+                                        <h3 className='text-2xl font-semibold text-[#184a79]'>{items.name}</h3>
                                         <h4 className='text-lg font-normal text-lightblack pt-2 opacity-50'>{items.profession}</h4>
                                     </div>
                                 </div>
@@ -256,7 +256,7 @@ const MultipleItems = () => {
                                         </div>
                                     </div>
                                     <div className="-mt-10">
-                                        <h3 className='text-2xl font-semibold text-lightblack'>{items.name}</h3>
+                                        <h3 className='text-2xl font-semibold text-[#184a79]'>{items.name}</h3>
                                         <h4 className='text-lg font-normal text-lightblack pt-2 opacity-50'>{items.profession}</h4>
                                     </div>
                                 </div>

@@ -19,7 +19,7 @@ const Register = () => {
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto  sm:pr-0">
                 <div className='hidden lg:block'>
                     <button
-                        className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#b3d7fb] hover:text-white hover:bg-[#6556ff]" onClick={openModal}>
+                        className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#b3d7fb] hover:text-white hover:bg-[#184a79]" onClick={openModal}>
                         Login
                     </button>
                 </div>
