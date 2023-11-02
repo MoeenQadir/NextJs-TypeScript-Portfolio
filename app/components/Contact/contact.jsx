@@ -3,8 +3,8 @@ import React from 'react';
 const Contact = () => {
     return (
         <>
-            <div id="contact" className={"flex gap-5 justify-evenly items-center px-10"}>
-                    <div className="flex flex-wrap">
+            <div id="contact" className={"flex gap-5 flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-center items-center"}>
+                    <div className="flex flex-wrap sm:w-full md:w-full lg:w-1/2">
                         <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                             <div className="flex items-start">
                                 <div className="shrink-0">
@@ -100,9 +100,8 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                <div className="min-h-screen py-6 flex flex-col justify-center sm:py-12">
-                    <div className="relative py-3 sm:max-w-xl sm:mx-auto">
-                        <div className="text-white relative px-4 py-10 bg-[#184a79] shadow-lg sm:rounded-3xl sm:p-20">
+                    <div className="py-3 px-2 sm:px-2 md:px-12 lg:px-24  flex flex-wrap w-full sm:w-full md:w-full lg:w-1/2">
+                        <div className="text-white px-4 py-10 bg-[#184a79] shadow-lg rounded-md sm:rounded-3xl">
                             <div className="text-center pb-6">
                                 <h1 className="text-3xl">Contact Me!</h1>
                                 <p className="text-gray-300">
@@ -136,21 +135,20 @@ const Contact = () => {
                                     style={{height: 121}}
                                     defaultValue={""}
                                 />
-                                <div className="flex justify-evenly me-6">
+                                <div className={"flex justify-center me-6 flex-col gap-5 mt-4 sm:flex-col md:flex-row lg:flex-row"}>
                                     <input
-                                        className="text-black text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#ffb900] hover:text-white hover:bg-[#1a21bc]"
+                                        className="text-black text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#ffb900]  hover:bg-[#b3d7fb]"
                                         type="submit"
                                         defaultValue="Send ➤"
                                     />
                                     <input
-                                        className="text-black  text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#acd1f4] hover:text-white hover:bg-black"
+                                        className="text-black  text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#acd1f4] hover:text-white hover:bg-gold"
                                         type="reset"
                                     />
                                 </div>
                             </form>
                         </div>
                     </div>
-                </div>
             </div>
         </>
     );

@@ -59,12 +59,12 @@ const Navbar = () => {
 
                             <div className="flex flex-shrink-0 items-center">
                                 <img
-                                    className="block h-24 w-40 lg:hidden"
+                                    className="block  h-56 w-48  lg:hidden"
                                     src={'/assets/logo/logo.jpg'}
                                     alt="dsign-logo"
                                 />
                                 <img
-                                    className="hidden h-28 w-44 lg:block"
+                                    className="hidden h-56 w-48 lg:block"
                                     src={'/assets/logo/logo.jpg'}
                                     alt="dsign-logo"
                                 />

@@ -33,8 +33,8 @@ const Banner = () => {
                         {/*</div>*/}
 
                         {/*</div>*/}
-                        <div className={"flex justify-start"}>
-                            <div className={"flex justify-center"}>
+                        <div className={"flex justify-start me-16 sm:justify-center md:justify-center lg:justify-start"}>
+                            <div className={"flex justify-center flex-col gap-5 mt-4 sm:flex-col md:flex-row items-center lg:flex-row"}>
                                 <button
                                     className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#b3d7fb] hover:text-white hover:bg-[#184a79]">
                                     Download CV
