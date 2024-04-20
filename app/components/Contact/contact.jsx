@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
     return (
         <>
-            <div id="contact" className={"flex gap-5 flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-center items-center"}>
+            <div id="contact" className={"flex ms-0 lg:ms-12 gap-5 flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-center items-center"}>
                     <div className="flex flex-wrap sm:w-full md:w-full lg:w-1/2">
                         <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                             <div className="flex items-start">
@@ -21,10 +21,10 @@ const Contact = () => {
                                         Technical support
                                     </p>
                                     <p className="text-neutral-500 ">
-                                        support@example.com
+                                        myselfxdeveloper@gmail.com
                                     </p>
                                     <p className="text-neutral-500 ">
-                                        +1 234-567-89
+                                        +92 344-1586-424
                                     </p>
                                 </div>
                             </div>
@@ -45,10 +45,10 @@ const Contact = () => {
                                         Sales questions
                                     </p>
                                     <p className="text-neutral-500 ">
-                                        sales@example.com
+                                       bsf1804461@ue.edu.pk
                                     </p>
                                     <p className="text-neutral-500 ">
-                                        +1 234-567-89
+                                        +92 308-6977-071
                                     </p>
                                 </div>
                             </div>
@@ -67,10 +67,10 @@ const Contact = () => {
                                 <div className="ml-6 grow">
                                     <p className="mb-2 font-bold ">Press</p>
                                     <p className="text-neutral-500 ">
-                                        press@example.com
+                                        myselfxdeveloper@gmail.com
                                     </p>
                                     <p className="text-neutral-500 ">
-                                        +1 234-567-89
+                                        +92 344-1586-424
                                     </p>
                                 </div>
                             </div>
@@ -91,10 +91,10 @@ const Contact = () => {
                                         Bug report
                                     </p>
                                     <p className="text-neutral-500 ">
-                                        bugs@example.com
+                                        myselfxdeveloper@gmail.com
                                     </p>
-                                    <p className="text-neutral-500">
-                                        +1 234-567-89
+                                    <p className="text-neutral-500 ">
+                                        +92 344-1586-424
                                     </p>
                                 </div>
                             </div>

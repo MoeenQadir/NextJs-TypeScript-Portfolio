@@ -9,41 +9,42 @@ import Image from "next/image";
 
 const postData = [
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/testimonial/user.svg',
+        name: "leoleo900c",
+        profession: 'Canada',
+        comment: 'My portal looks very professional he has done an amazing job. I definitely recommend this freelancer to everyone! He completed the project in very short time with great perfection',
+        imgSrc: '/assets/testimonial/avatar.png',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user2.png',
+        name: "robert90ac",
+        profession: 'United States',
+        comment: 'The freelancer provided me my crypto website front end with a very professional design and the robust technology of Nextjs. It was an amazing experience with this freelancer. I really love to work with him for my future products.',
+        imgSrc: '/assets/testimonial/avatar.png',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user3.png',
+        name: "jackhenry0089",
+        profession: 'United States',
+        comment: 'Moon has perfectly done with website landing page using reactjs and tailwind css technology. His skills are very professional and he provides quality work. I will say thanks.',
+        imgSrc: '/assets/testimonial/avatar.png',
     },
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user1.png',
+        name: "Sophia Lee",
+        profession: 'United States',
+        comment: 'Moon has demonstrated exceptional skill in creating website landing pages using React.js and Tailwind CSS technology. His professionalism and the quality of his work are truly impressive. Many thanks!',
+        imgSrc: '/assets/testimonial/avatar.png',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user2.png',
+        name: "Alexandre Dubois",
+        profession: 'France',
+        comment: 'Moon has a remarkable talent for crafting website landing pages. His use of React.js and Tailwind CSS technology is outstanding. I am truly impressed by his professionalism and the quality of his work. Merci beaucoup!',
+        imgSrc: '/assets/testimonial/avatar.png',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user3.png',
+        name: "Isabella Chen",
+        profession: 'Japan',
+        comment: 'Moon\'s website landing page creations are excellent. His use of React.js and Tailwind CSS technology is superb. He provides professional skills and high-quality work. Thank you!',
+        imgSrc: '/assets/testimonial/avatar.png',
     },
+
 ]
 
 // CAROUSEL SETTINGS
@@ -99,9 +100,9 @@ const MultipleItems = () => {
                     <Slider {...settings}>
                         {postData.map((items) => (
                             <div >
-                                <div className={`bg-white m-4 p-5 my-20 relative ${1 % 2 ? 'middleDiv' : 'testimonial-shadow'}`}>
+                                <div className={`bg-white m-4 p-5 my-20 relative ${1 % 2 ? 'middleDiv' : 'testimonial-shadow'}`} style={{ minHeight: '300px' }}>
                                     <div className="absolute top-[-45px]">
-                                        <Image src={items.imgSrc} alt={items.imgSrc} width={100} height={100} className="inline-block" />
+                                        <Image src={items.imgSrc} alt={items.imgSrc} width={60} height={60} className="inline-block" />
                                     </div>
                                     <h4 className='text-base font-normal text-darkgray my-4'>{items.comment}</h4>
                                     <hr style={{ color: "#D7D5D5" }} />
@@ -115,7 +116,7 @@ const MultipleItems = () => {
                                             <StarIcon width={20} className="text-gold" />
                                             <StarIcon width={20} className="text-gold" />
                                             <StarIcon width={20} className="text-gold" />
-                                            <StarIcon width={20} className="text-lightgray" />
+                                            <StarIcon width={20} className="text-gold" />
                                         </div>
                                     </div>
                                 </div>
