@@ -14,7 +14,7 @@ const Footer = () => {
         <footer className="w-full bg-gray-100 dark:bg-gray-900 py-16">
             <div className="md:px-12 lg:px-28">
                 <div className="container m-auto space-y-6 text-gray-600 dark:text-gray-300">
-                    <img src="/assets/logo/logo.jpg" alt="Moeen Qadir" className="mx-auto w-40"/>
+                    <h1 className={"text-5xl underline antialiased hover:subpixel-antialiased decoration-[#ffb900] text-[#184a79] text-center my-4"}>Ⲙⲟⲉⲉⲛ</h1>
                    <div className={"flex justify-center"}>
                        <ul role="list" className="flex text-center md:flex-row flex-col w-6/12 justify-center md:justify-center gap-6 mb-4">
                            {navigation.map((link, index) => (
@@ -27,7 +27,7 @@ const Footer = () => {
                        </ul>
                    </div>
                     <div className="m-auto flex w-max items-center justify-between space-x-4">
-                        <a href="tel:+243996660436" aria-label="call">
+                        <a className={"hover:scale-125"} href="tel:+923441586424" aria-label="call">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -40,7 +40,7 @@ const Footer = () => {
                                 ></path>
                             </svg>
                         </a>
-                        <a href="mailto:hello@mail.com" aria-label="send mail">
+                        <a className={"hover:scale-125"} href="mailto:myselfxdeveloper@gmail.com" aria-label="send mail">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -52,7 +52,7 @@ const Footer = () => {
                                 ></path>
                             </svg>
                         </a>
-                        <a href="#" title="facebook" target="blank" aria-label="facebook">
+                        <a className={"hover:scale-125"} href="https://www.facebook.com/profile.php?id=100081518093414" title="facebook" target="blank" aria-label="facebook">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -64,7 +64,7 @@ const Footer = () => {
                                 ></path>
                             </svg>
                         </a>
-                        <a href="#" title="linkedin" target="blank" aria-label="linkedin">
+                        <a className={"hover:scale-125"} href="https://www.linkedin.com/in/muhammad-moeen-ul-qadir-aba580247/" title="linkedin" target="blank" aria-label="linkedin">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"

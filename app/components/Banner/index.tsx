@@ -18,7 +18,7 @@ const Banner = () => {
                         <h1 className='text-[#184a79] text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0'>
                             Hello,
                             I Am Moeen <br/>
-                            Full Stack <span className={"text-[#ffb900] underline"}>Developer</span></h1>
+                            Full Stack <span className={"text-[#ffb900] decoration-[#184a79] underline"}>Developer</span></h1>
                         <h3 className='text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-0'>Build
                             Experienced graduate software engineer with <span className={"text-kellygreen underline"}>5+</span> years of industry experience, specializing in
                             full stack Software Development.</h3>

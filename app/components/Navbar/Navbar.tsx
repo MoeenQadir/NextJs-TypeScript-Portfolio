@@ -4,7 +4,6 @@ import React, {useState} from 'react';
 import {Bars3Icon} from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Signdialog from "./Signdialog";
 import Registerdialog from "./Registerdialog";
 
 interface NavigationItem {
@@ -58,16 +57,10 @@ const Navbar = () => {
                             {/* LOGO */}
                             <Link href="/">
                                 <div className="flex flex-shrink-0 items-center">
-                                    <img
-                                        className="block  h-56 w-48  lg:hidden"
-                                        src={'/assets/logo/logo.jpg'}
-                                        alt="dsign-logo"
-                                    />
-                                    <img
-                                        className="hidden h-56 w-48 lg:block"
-                                        src={'/assets/logo/logo.jpg'}
-                                        alt="dsign-logo"
-                                    />
+                                    <h1 className={"text-5xl lg:hidden block underline antialiased hover:subpixel-antialiased decoration-[#ffb900] text-[#184a79] text-center my-4"}>Ⲙⲟⲉⲉⲛ</h1>
+
+                                    <h1 className={"text-5xl lg:block hidden underline antialiased hover:subpixel-antialiased decoration-[#ffb900] text-[#184a79] text-center my-4"}>Ⲙⲟⲉⲉⲛ</h1>
+
                                 </div>
                             </Link>
 

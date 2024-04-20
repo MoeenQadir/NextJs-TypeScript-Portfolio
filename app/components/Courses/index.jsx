@@ -8,64 +8,60 @@ import { StarIcon } from '@heroicons/react/24/solid'
 
 const postData = [
     {
-        heading: 'Full stack modern',
-        heading2: 'javascript',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/courseone.png',
-        students: 150,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'Design system',
-        heading2: 'with React programme',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursetwo.png',
+        heading: 'Romania SAAS Company',
+        heading2: 'APOSTAL',
+        name: "NEXT JS Multi Language Landing Page",
+        imgSrc: '/assets/courses/multi-lang.png',
         students: 130,
         classes: 12,
         price: 20,
         rating: 4.7,
+        link: 'https://vlad-company.vercel.app/'
     },
+
     {
-        heading: 'Design banner',
-        heading2: 'with Figma',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursethree.png',
+        heading: 'Live Crypto Market Site',
+        heading2: 'Crypto',
+        name: "Live Crypto APIs Consumes",
+        imgSrc: '/assets/courses/crypto.png',
         students: 120,
         classes: 12,
         price: 20,
         rating: 4.7,
+        link: 'https://crypto-nextjs.netlify.app/'
     },
     {
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/courseone.png',
+        heading: 'Analytics Services',
+        heading2: 'Modernized',
+        name: "Full Stack Admin dashboard",
+        imgSrc: '/assets/courses/dashboard.png',
         students: 150,
         classes: 12,
         price: 20,
         rating: 4.7,
+        link: 'https://modernize-nextjs-free.vercel.app/'
     },
     {
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursetwo.png',
+        heading: 'Tech Company Website',
+        heading2: 'Callsense',
+        name: "SAAS Tech Company",
+        imgSrc: '/assets/courses/callsense.png',
         students: 150,
         classes: 12,
         price: 20,
         rating: 4.7,
+        link: 'https://www.callsense.ai/'
     },
     {
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursethree.png',
+        heading: 'Full stack 3D ',
+        heading2: 'React Website',
+        name: "3D Company Landing Page",
+        imgSrc: '/assets/courses/3d-website.png',
         students: 150,
         classes: 12,
         price: 20,
         rating: 4.7,
+        link: 'https://3d-landingpage2024.netlify.app/'
     },
 ]
 
@@ -137,12 +133,19 @@ const MultipleItems = () => {
 
                                         <div className="flex justify-between items-center py-6">
                                             <div className="flex gap-4 justify-center items-center cursor-pointer">
-                                                    <Image src="/assets/banner/github.svg" alt="check-image" width={50} height={50}
-                                                           className='smallImage'/>
+                                                <div className="flex">
+                                                    <StarIcon width={20} className="text-gold" />
+                                                    <StarIcon width={20} className="text-gold" />
+                                                    <StarIcon width={20} className="text-gold" />
+                                                    <StarIcon width={20} className="text-gold" />
+                                                    <StarIcon width={20} className="text-gold" />
+                                                </div>
                                             </div>
+                                            <Link target={"_blank"} href={items.link}>
                                             <div>
                                                 <h3 className="text-md font-medium cursor-pointer">Live Preview</h3>
                                             </div>
+                                            </Link>
                                         </div>
 
                                         {/*<hr style={{ color: "#C4C4C4" }} />*/}
