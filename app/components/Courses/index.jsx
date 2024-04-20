@@ -122,7 +122,7 @@ const MultipleItems = () => {
                             <div>
                                 <div className='bg-white m-3 px-3 pt-3 pb-12 my-20 shadow-courses rounded-2xl'>
                                     <div className="relative rounded-3xl">
-                                        <Image src={items.imgSrc} alt="gaby" width={389} height={262} className="m-auto clipPath" />
+                                        <Image src={items.imgSrc} alt="gaby" width={389} height={200} className="m-auto clipPath" />
                                         <div className="absolute right-5 -bottom-2 bg-[#184a79] rounded-full p-6">
                                             <h3 className="text-white uppercase text-center text-sm font-medium">Top <br /> Rated</h3>
                                         </div>

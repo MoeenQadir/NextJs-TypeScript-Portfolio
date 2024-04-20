@@ -14,7 +14,6 @@ export default function Home() {
             <Mentor/>
             <Courses/>
             <Testimonials/>
-            {/*<Newsletter/>*/}
             <Contact/>
         </main>
     )

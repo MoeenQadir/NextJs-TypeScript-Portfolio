@@ -10,25 +10,25 @@ const postData = [
         profession: 'Crafting Seamless Digital Experiences with 3 Years of Full Stack Development',
         name: 'Full Stack Development',
         imgSrc: '/assets/technologies/fullstack.png',
-        years: '3',
+        years: '5',
     },
     {
         profession: 'Designing User-Centric Interfaces with 3 Years of Expertise in Figma',
         name: 'UI & UX Designing',
         imgSrc: '/assets/technologies/uiux.png',
-        years: '3',
+        years: '5',
     },
     {
         profession: 'Building Blazing-Fast Web Apps with 3 Years of Next.js Proficiency',
         name: 'Next.js',
         imgSrc: '/assets/technologies/next.png',
-        years: '3',
+        years: '5',
     },
     {
         profession: 'Creating Engaging User Interfaces with 3 Years of React.js Mastery',
         name: 'React.js',
         imgSrc: '/assets/technologies/react.png',
-        years: '3',
+        years: '5',
     },
     {
         profession: 'Powering Scalable Backend Systems with 2 Years of Node.js Development',
@@ -49,7 +49,7 @@ const ManageData = [
         profession: 'Collaborating Efficiently with 3 Years of GitHub Expertise',
         name: 'GitHub',
         imgSrc: '/assets/technologies/github.png',
-        years: '3',
+        years: '5',
     },
     {
         profession: 'Managing Projects Seamlessly with 3 Years of Jira Proficiency',
