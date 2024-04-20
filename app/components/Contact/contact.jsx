@@ -1,8 +1,29 @@
-import React from 'react';
+"use client"
+import React, {useRef, useState} from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+    const [state, handleSubmit] = useForm("myyrljne");
+    const formRef = useRef(null);
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handleFormSubmit = async (event) => {
+        setIsLoading(true); // Set loading to true when submitting form
+        await handleSubmit(event);
+        if (state.succeeded) {
+            toast.success('Your message has been successfully sent! Thank you for reaching out. You can expect a reply in your email inbox shortly.', {
+                autoClose: 10000,
+            });
+            formRef.current.reset();
+        }
+        setIsLoading(false); // Set loading to false after form submission
+    };
+
     return (
         <>
+            <ToastContainer />
             <div id="contact" className={"flex ms-0 lg:ms-12 gap-5 flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-center items-center"}>
                     <div className="flex flex-wrap sm:w-full md:w-full lg:w-1/2">
                         <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
@@ -108,7 +129,7 @@ const Contact = () => {
                                     Fill up the form below to send us a message.
                                 </p>
                             </div>
-                            <form>
+                            <form ref={formRef} onSubmit={handleFormSubmit}>
                                 <input
                                     className="shadow mb-4  appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
                                     type="text"
@@ -139,7 +160,8 @@ const Contact = () => {
                                     <input
                                         className="text-black text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#ffb900]  hover:bg-[#b3d7fb]"
                                         type="submit"
-                                        defaultValue="Send ➤"
+                                        defaultValue={!isLoading ? "Send ➤" : "Loading..."}
+                                        disabled={state.submitting}
                                     />
                                     <input
                                         className="text-black  text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-[#acd1f4] hover:text-white hover:bg-gold"
