@@ -20,7 +20,7 @@ const Banner = () => {
                             I Am Moeen <br/>
                             Full Stack <span className={"text-[#ffb900] decoration-[#184a79] underline"}>Developer</span></h1>
                         <h3 className='text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-0'>Build
-                            Experienced graduate software engineer with <span className={"text-kellygreen underline"}>5+</span> years of industry experience, specializing in
+                            Experienced graduate software engineer with <span className={"text-kellygreen font-bold text-xl underline"}>5+</span> years of industry experience, specializing in
                             full stack Software Development.</h3>
                         <div className={"flex justify-center sm:justify-center w-full md:justify-center lg:justify-start"}>
                             <div className={"flex justify-center flex-col gap-5 mt-6 lg:mt-4 sm:flex-col md:flex-row items-center lg:flex-row"}>

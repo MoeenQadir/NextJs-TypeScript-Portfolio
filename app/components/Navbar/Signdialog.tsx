@@ -1,5 +1,5 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import { LockClosedIcon } from '@heroicons/react/20/solid'
 
 
@@ -54,13 +54,10 @@ const Signin = () => {
                                     <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
                                         <div className="w-full max-w-md space-y-8">
                                             <div>
-                                                <img
-                                                    className="mx-auto h-12 w-auto"
-                                                    src="/assets/logo/logo.svg"
-                                                    alt="Your Company"
-                                                />
+                                                <h1 className={"text-5xl underline antialiased hover:subpixel-antialiased decoration-[#ffb900] text-[#184a79] text-center my-4"}>Ⲙⲟⲉⲉⲛ</h1>
+
                                                 <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-                                                    Sign in to your account
+                                                    Sign in to Admin Account
                                                 </h2>
                                             </div>
                                             <form className="mt-8 space-y-6" action="#" method="POST">
