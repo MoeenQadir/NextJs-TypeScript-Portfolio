@@ -3,14 +3,19 @@ import React, {useRef, useState} from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 const Contact = () => {
     const [state, handleSubmit] = useForm("myyrljne");
     const formRef = useRef(null);
     const [isLoading, setIsLoading] = useState(false);
 
     const handleFormSubmit = async (event) => {
+        event.preventDefault();
         setIsLoading(true); // Set loading to true when submitting form
+        if (formRef.current.name.value === '' || formRef.current.email.value === '' || formRef.current._subject.value === '' || formRef.current.message.value === '') {
+            toast.warning('Please enter full details.'); // Display warning toast if any input is empty
+            setIsLoading(false); // Set loading to false after showing warning
+            return;
+        }
         await handleSubmit(event);
         if (state.succeeded) {
             toast.success('Your message has been successfully sent! Thank you for reaching out. You can expect a reply in your email inbox shortly.', {
