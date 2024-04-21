@@ -4,8 +4,8 @@ import Footer from './components/Footer/Footer';
 
 
 export const metadata = {
-    title: 'Ⲙⲟⲉⲉⲛ - Software Engineer | Full Stack Developer',
-    description: 'Welcome to Ⲙⲟⲉⲉⲛ! I am a passionate software engineer and full stack developer skilled in a wide range of technologies. With expertise in front-end development using React.js, Next.js, and Tailwind CSS, as well as back-end development with Node.js, Express.js, and MongoDB, I specialize in building robust and scalable web applications. Explore my portfolio and reach out to discuss your project needs!',
+    title: 'Moeen Ul Qadir - Software Engineer | Full Stack Developer',
+    description: 'Welcome to Moeen Ul Qadir site ! I am a passionate software engineer and full stack developer skilled in a wide range of technologies. With expertise in front-end development using React.js, Next.js, and Tailwind CSS, as well as back-end development with Node.js, Express.js, and MongoDB, I specialize in building robust and scalable web applications. Explore my portfolio and reach out to discuss your project needs!',
     keywords: 'software, engineer, full stack developer, front end developer, react developer, next js, tailwind, html, css, javascript, jquery, MERN stack development, express, node, mongodb, portfolio, web development',
 }
 export default function RootLayout({
