@@ -7,25 +7,25 @@ import Image from "next/image";
 
 const postData = [
     {
-        profession: 'Crafting Seamless Digital Experiences with 3 Years of Full Stack Development',
+        profession: 'Crafting Seamless Digital Experiences with 5 Years of Full Stack Development',
         name: 'Full Stack Development',
         imgSrc: '/assets/technologies/fullstack.png',
         years: '5',
     },
     {
-        profession: 'Designing User-Centric Interfaces with 3 Years of Expertise in Figma',
+        profession: 'Designing User-Centric Interfaces with 5 Years of Expertise in Figma',
         name: 'UI & UX Designing',
         imgSrc: '/assets/technologies/uiux.png',
         years: '5',
     },
     {
-        profession: 'Building Blazing-Fast Web Apps with 3 Years of Next.js Proficiency',
+        profession: 'Building Blazing-Fast Web Apps with 5 Years of Next.js Proficiency',
         name: 'Next.js',
         imgSrc: '/assets/technologies/next.png',
         years: '5',
     },
     {
-        profession: 'Creating Engaging User Interfaces with 3 Years of React.js Mastery',
+        profession: 'Creating Engaging User Interfaces with 5 Years of React.js Mastery',
         name: 'React.js',
         imgSrc: '/assets/technologies/react.png',
         years: '5',
@@ -37,16 +37,16 @@ const postData = [
         years: '2',
     },
     {
-        profession: 'Exploring the Future with 1 Year of AI & Machine Learning Experience',
+        profession: 'Exploring the Future with 2 Year of AI & Machine Learning Experience',
         name: 'AI & Machine Learning',
         imgSrc: '/assets/technologies/machine.png',
-        years: '1.5',
+        years: '2',
     },
 ];
 
 const ManageData = [
     {
-        profession: 'Collaborating Efficiently with 3 Years of GitHub Expertise',
+        profession: 'Collaborating Efficiently with 5 Years of GitHub Expertise',
         name: 'GitHub',
         imgSrc: '/assets/technologies/github.png',
         years: '5',
@@ -76,7 +76,7 @@ const ManageData = [
         years: '2',
     },
     {
-        profession: 'Embracing Cloud Technology with 1 Year of AWS Deployment Experience',
+        profession: 'Embracing Cloud Technology with 1.5 Year of AWS Deployment Experience',
         name: 'AWS Cloud Deployment',
         imgSrc: '/assets/technologies/aws.png',
         years: '1.5',
