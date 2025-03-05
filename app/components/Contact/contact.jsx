@@ -44,7 +44,7 @@ const Contact = () => {
                         <div className={"flex space-x-4"}>
                             <span className={"bg-white p-2 rounded-lg"}><LuPhoneCall
                                 className="text-Blueviolet text-lg"/></span>
-                            <span className={"text-white mt-1 text-lg"}>Contact Me Directly At</span>
+                            <span className={"text-white mt-1 text-lg"}>Contact Us Directly At</span>
                         </div>
                         <span
                             className={"text-white tracking-[0.2rem] font-stretch-extra-expanded ms-5 font-semibold text-2xl"}>+92-344-1586424</span>
@@ -64,7 +64,7 @@ const Contact = () => {
                         <div className={"flex space-x-4"}>
                             <span className={"bg-gunmetalgray p-2 rounded-lg"}><MdOutlineAttachEmail
                                 className="text-white text-lg"/></span>
-                            <span className={"text-black mt-1 text-lg"}>Chat With Me</span>
+                            <span className={"text-black mt-1 text-lg"}>Chat With Us</span>
                         </div>
                         <span
                             className={"text-black font-stretch-extra-expanded ms-5 font-semibold text-lg md:text-xl"}>myselfxdeveloper@gmail.com</span>
