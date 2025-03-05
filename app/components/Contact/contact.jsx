@@ -6,6 +6,7 @@ import {FaUser, FaEnvelope, FaRegCommentDots} from "react-icons/fa";
 import 'react-toastify/dist/ReactToastify.css';
 import { LuPhoneCall } from "react-icons/lu";
 import {MdOutlineAttachEmail} from "react-icons/md";
+import {FaMessage} from "react-icons/fa6";
 
 const Contact = () => {
     const [state, handleSubmit] = useForm("myyrljne");
@@ -114,7 +115,7 @@ const Contact = () => {
                             </div>
 
                             <div className="relative">
-                                <FaRegCommentDots
+                                <FaMessage
                                     className="absolute  left-4 bottom-1 lg:top-1/2 transform -translate-y-1/2 text-lightgray text-lg"/>
                                 <input
                                     className="shadow mt-3 lg:mt-0 appearance-none rounded-full p-2 w-full py-3 pl-12 pr-4 text-black leading-tight focus:outline-none focus:shadow-outline"
