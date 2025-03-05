@@ -98,7 +98,7 @@ const Contact = () => {
                                         }}
                                     />
                                 </div>
-                                <div className="relative">
+                                <div className="relative mt-3 md:mt-0">
                                     <FaEnvelope
                                         className="absolute left-4 text-lightgray top-[1.4rem] transform -translate-y-1/2 text-gray-500 text-lg"/>
                                     <input
@@ -118,7 +118,7 @@ const Contact = () => {
                                 <FaMessage
                                     className="absolute  left-4 bottom-1 lg:top-1/2 transform -translate-y-1/2 text-lightgray text-lg"/>
                                 <input
-                                    className="shadow mt-3 lg:mt-0 appearance-none rounded-full p-2 w-full py-3 pl-12 pr-4 text-black leading-tight focus:outline-none focus:shadow-outline"
+                                    className="shadow lg:mt-0 appearance-none rounded-full p-2 w-full py-3 pl-12 pr-4 text-black leading-tight focus:outline-none focus:shadow-outline"
                                     type="text"
                                     placeholder="Subject"
                                     name="_subject"
