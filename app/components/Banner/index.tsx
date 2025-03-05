@@ -72,7 +72,7 @@ const Banner = () => {
                         </div>
                     </div>
 
-                    <div className='col-span-6 flex justify-center'>
+                    <div className='col-span-6 flex mt-5 lg:mt-0 justify-center'>
                         <Image className={"rounded-bl-full"} src="/assets/banner/moni.jpg" alt="nothing" width={500} height={805}/>
                     </div>
                 </div>
