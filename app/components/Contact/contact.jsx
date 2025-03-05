@@ -36,7 +36,11 @@ const Contact = () => {
             <ToastContainer/>
             <div id="contact" className={"flex ms-0 lg:ms-12 gap-5 flex-col sm:flex-col md:flex-col lg:flex-row justify-center items-center"}>
                 <div className="flex justify-center items-center space-y-5 px-2 lg:px-0 flex-wrap w-full md:w-full lg:w-1/2">
-                    <div className="h-full flex justify-center flex-col space-y-5 px-6 py-5 lg:h-[250px] w-full lg:w-7/12 bg-[#4f46e5] rounded-xl">
+                    <div className="h-full flex justify-center flex-col space-y-5 px-6 py-5 lg:h-[250px] w-full lg:w-7/12 bg-[#4f46e5] rounded-xl"
+                         style={{
+                             boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
+                         }}
+                    >
                         <div className={"flex space-x-4"}>
                             <span className={"bg-white p-2 rounded-lg"}><LuPhoneCall
                                 className="text-Blueviolet text-lg"/></span>
@@ -53,7 +57,10 @@ const Contact = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="h-full flex justify-center flex-col space-y-5 px-6 py-5 lg:h-[250px] w-full lg:w-7/12 bg-[#f3f4f6] rounded-xl">
+                    <div className="h-full flex justify-center flex-col space-y-5 px-6 py-5 lg:h-[250px] w-full lg:w-7/12 bg-[#f3f4f6] rounded-xl"
+                         style={{
+                             boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
+                         }}>
                         <div className={"flex space-x-4"}>
                             <span className={"bg-gunmetalgray p-2 rounded-lg"}><MdOutlineAttachEmail
                                 className="text-white text-lg"/></span>
