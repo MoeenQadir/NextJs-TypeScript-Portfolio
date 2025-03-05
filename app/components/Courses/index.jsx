@@ -108,7 +108,7 @@ const MultipleItems = () => {
                 <div className='mx-auto max-w-7xl sm:py-8 px-4 lg:px-8 '>
 
                     <div className="sm:flex justify-between items-center">
-                        <h3 className="text-[#184a79] text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Recent Projects</h3>
+                        <h3 className="text-[#184a79] mt-10 lg:mt-0 text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Recent Projects</h3>
                         {/*<Link href={'/'} className="text-Blueviolet text-lg font-medium space-links">Explore more&nbsp;&gt;&nbsp;</Link>*/}
                     </div>
 
@@ -116,7 +116,7 @@ const MultipleItems = () => {
                     <Slider {...settings}>
                         {postData.map((items) => (
                             <div>
-                                <div className='bg-white m-3 px-3 pt-3 pb-12 my-20 shadow-courses rounded-2xl'>
+                                <div className='bg-white m-3 px-3 pt-3 pb-12 mb-20 mt-10 lg:mt-20 shadow-courses rounded-2xl'>
                                     <div className="relative rounded-3xl">
                                         <Image src={items.imgSrc} alt="gaby" width={389} height={200} className="m-auto clipPath" />
                                         <div className="absolute right-5 -bottom-2 bg-[#184a79] rounded-full p-6">
