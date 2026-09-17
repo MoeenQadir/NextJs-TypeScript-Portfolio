@@ -1,0 +1,239 @@
+export type Project = {
+    slug: string;
+    title: string;
+    category: string;
+    year: string;
+    client: string;
+    role: string;
+    image: string;
+    gradient: [string, string];
+    summary: string;
+    description: string[];
+    highlights: string[];
+    features: string[];
+    stack: string[];
+    links: { live?: string; github?: string };
+    featured?: boolean;
+};
+
+export const projects: Project[] = [
+    {
+        slug: "callsense-saas",
+        title: "Callsense — AI-Powered Call Center SaaS",
+        category: "SaaS Product",
+        year: "2023",
+        client: "Callsense Company",
+        role: "Front End Engineer",
+        image: "/assets/courses/callsense.png",
+        gradient: ["#38bdf8", "#6366f1"],
+        summary:
+            "An AI-based SaaS product that optimizes call center operations with intelligent dashboards and advanced AI features.",
+        description: [
+            "Callsense is an AI-driven SaaS platform that helps call centers monitor, analyze and optimize their operations. I owned the front-end for the product website, the core SaaS application and a dedicated analytics dashboard.",
+            "I implemented advanced AI-driven features into the SaaS experience, improved data visualization for operators and worked closely with FasTech Systems backend engineers to integrate the front-end with real-time APIs.",
+        ],
+        highlights: [
+            "Designed and implemented the UI for Callsense's AI-based SaaS product",
+            "Led development of the Callsense dashboard — improving user accessibility and data visualization",
+            "Implemented advanced AI features enhancing call center solutions",
+            "Integrated front-end with backend APIs across multiple projects",
+        ],
+        features: [
+            "Real-time call analytics dashboards",
+            "AI-powered call insights & sentiment views",
+            "Role-based accessible UI",
+            "Live data visualization components",
+        ],
+        stack: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "REST APIs", "Redux"],
+        links: { live: "https://www.callsense.ai/" },
+        featured: true,
+    },
+    {
+        slug: "augier-legal-tech",
+        title: "Augier.ai — Legal Tech Website",
+        category: "Corporate Website",
+        year: "2023",
+        client: "Augier.ai (New York)",
+        role: "Front End Developer",
+        image: "/assets/projects/augier.svg",
+        gradient: ["#184a79", "#38bdf8"],
+        summary:
+            "Responsive, high-converting front-end development for a US-based legal technology company.",
+        description: [
+            "Augier.ai is a legal technology company based in New York. As their front-end developer, I translated design mockups into responsive, accessible and visually appealing interfaces for their legal tech applications.",
+            "Working in a fully remote international team, I collaborated with backend engineers to integrate components efficiently and drove UI/UX improvements that elevated the overall user experience of the platform.",
+        ],
+        highlights: [
+            "Developed front-end solutions for a USA-based legal tech company",
+            "Translated design mockups into responsive and visually appealing UIs",
+            "Enhanced user experience on legal tech applications through UI/UX improvements",
+            "Demonstrated effective communication, fostering seamless remote collaboration",
+        ],
+        features: [
+            "Responsive marketing & product pages",
+            "UI/UX polish on legal workflows",
+            "Backend integration readiness",
+            "International remote team collaboration",
+        ],
+        stack: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "HTML5/CSS3"],
+        links: { live: "https://www.augier.ai/" },
+        featured: true,
+    },
+    {
+        slug: "apostol-multilang-landing",
+        title: "Apostol & Asociatii — Multilingual Business Landing Page",
+        category: "Landing Page",
+        year: "2023",
+        client: "International Romanian Tech Company",
+        role: "Front End Developer",
+        image: "/assets/courses/multi-lang.png",
+        gradient: ["#f59e0b", "#f43f5e"],
+        summary:
+            "A fully functional multi-language landing page for a prominent Romanian technology company powered by Next.js.",
+        description: [
+            "I spearheaded the creation of a complete landing page for a leading Romanian tech company while contracting through an international agency.",
+            "The project required multi-language support to serve diverse audiences, advanced features to elevate product visibility and a seamless experience across every device — delivered with Next.js and Tailwind CSS.",
+        ],
+        highlights: [
+            "Spearheaded a fully functional landing page for a prominent Romanian tech company",
+            "Implemented multi-language support to enhance accessibility for diverse user bases",
+            "Incorporated advanced features to elevate product visibility and business expansion",
+            "Achieved seamless UX across devices with optimized, performance-focused design",
+        ],
+        features: [
+            "Internationalization / multi-language routing",
+            "Advanced marketing features & SEO elements",
+            "Fully responsive design system",
+            "High performance on all devices",
+        ],
+        stack: ["Next.js", "Tailwind CSS", "TypeScript", "i18n", "Vercel"],
+        links: { live: "https://vlad-company.vercel.app/" },
+        featured: true,
+    },
+    {
+        slug: "modernize-admin-dashboard",
+        title: "Modernize — E-commerce Admin Dashboard",
+        category: "Admin Dashboard",
+        year: "2024",
+        client: "Fiverr Client",
+        role: "Full Stack Developer",
+        image: "/assets/courses/dashboard.png",
+        gradient: ["#8b5cf6", "#38bdf8"],
+        summary:
+            "A feature-rich, fully functional e-commerce admin dashboard built with Next.js, TypeScript and Tailwind CSS.",
+        description: [
+            "Delivered on Fiverr a modern e-commerce admin dashboard that streamlines store management. The product leverages Next.js and TypeScript for scalable, type-safe development and Context/Redux for robust state management.",
+            "The result is an intuitive, visually appealing management interface that made e-commerce operations dramatically more efficient for the client.",
+        ],
+        highlights: [
+            "Leveraged Next.js, TypeScript and Tailwind CSS for efficient, scalable development",
+            "Implemented Context/Redux for robust state management and seamless data flow",
+            "Prioritized UX with intuitive navigation and a visually appealing interface",
+            "Enhanced efficiency and streamlined management for e-commerce operations",
+        ],
+        features: [
+            "Product, order & customer management views",
+            "Analytics and sales widgets",
+            "Dark/light theming",
+            "Redux-powered global state",
+        ],
+        stack: ["Next.js", "TypeScript", "Redux", "Context API", "Tailwind CSS"],
+        links: { live: "https://modernize-nextjs-dark.vercel.app/" },
+        featured: true,
+    },
+    {
+        slug: "crypto-live-market",
+        title: "Live Crypto Market Tracker",
+        category: "Data Dashboard",
+        year: "2023",
+        client: "Personal Project",
+        role: "Full Stack Developer",
+        image: "/assets/courses/crypto.png",
+        gradient: ["#fbbf24", "#10b981"],
+        summary:
+            "A real-time cryptocurrency market dashboard that consumes live market APIs with interactive charts and search.",
+        description: [
+            "A live crypto market site that consumes real-time cryptocurrency APIs to display up-to-the-second prices, market stats and trends. Built as a demonstration of data fetching, state handling and rich dashboards in Next.js.",
+            "The dashboard lets users browse top coins, search the market and review historical performance through dynamic, animated charts.",
+        ],
+        highlights: [
+            "Live consumption of crypto market APIs",
+            "Interactive, real-time price dashboards",
+            "Clean, responsive data-heavy UI",
+        ],
+        features: [
+            "Real-time price tickers",
+            "Market search with ranking",
+            "Dynamic chart views",
+            "Automatic data refresh",
+        ],
+        stack: ["Next.js", "React.js", "REST APIs", "Tailwind CSS"],
+        links: { live: "https://crypto-nextjs.netlify.app/" },
+    },
+    {
+        slug: "3d-company-landing",
+        title: "3D Company Landing Page",
+        category: "Interactive Website",
+        year: "2023",
+        client: "International Client",
+        role: "Front End Developer",
+        image: "/assets/courses/3d-website.png",
+        gradient: ["#0ea5e9", "#7c3aed"],
+        summary:
+            "An immersive 3D landing page using WebGL and React — a bold, interactive experience that showcases a company in motion.",
+        description: [
+            "A striking landing page that pushes the boundaries of web experiences with 3D rendering, smooth scroll animations and interactive product presentations built with React and WebGL.",
+            "The project demonstrates how creative engineering and animation can turn a corporate landing page into an unforgettable brand experience.",
+        ],
+        highlights: [
+            "Immersive WebGL-powered 3D visuals",
+            "Butter-smooth scroll & entrance animations",
+            "Interactive product showcases",
+            "High-performance modern web architecture",
+        ],
+        features: [
+            "3D product hero",
+            "Animated sections & transitions",
+            "Interactive scroll story",
+            "Optimized rendering pipeline",
+        ],
+        stack: ["React.js", "Three.js", "WebGL", "Tailwind CSS"],
+        links: { live: "https://3d-landingpage2024.netlify.app/" },
+    },
+    {
+        slug: "ai-powered-portfolio",
+        title: "AI-Powered Portfolio Platform",
+        category: "Personal Brand",
+        year: "2024",
+        client: "Moeen Ul Qadir",
+        role: "Full Stack Software Engineer",
+        image: "/assets/projects/portfolio.svg",
+        gradient: ["#184a79", "#f59e0b"],
+        summary:
+            "This website — a multi-page portfolio with 3D visuals, SEO architecture and a complete brand experience.",
+        description: [
+            "A modern, multi-page portfolio engineered with Next.js, TypeScript, Tailwind CSS, Three.js (React Three Fiber) and Framer Motion. It doubles as a living product that reflects my engineering standards.",
+            "The site features a WebGL animated hero, dynamic project detail pages with slugs, structured data for search engines, a complete DevOps narrative and a contact pipeline ready for automation.",
+        ],
+        highlights: [
+            "WebGL animated 3D hero and interactive visuals",
+            "Dynamic project detail pages with SEO metadata",
+            "JSON-LD structured data for rich search results",
+            "Reusable, typed component architecture",
+        ],
+        features: [
+            "3D scene with mouse-parallax",
+            "Framer Motion scroll animations",
+            "Custom cursor experience",
+            "Sitemap, robots & OG meta pipeline",
+        ],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Framer Motion"],
+        links: { live: "https://www.moeenqadir.com", github: "https://github.com/MoeenQadir" },
+        featured: true,
+    },
+];
+
+export const getProjectBySlug = (slug: string): Project | undefined =>
+    projects.find((p) => p.slug === slug);
+
+export const featuredProjects = projects.filter((p) => p.featured);
