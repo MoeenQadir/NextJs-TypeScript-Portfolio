@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="MetroPulse city and people data platform dashboard">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0a20"/>
+      <stop offset="1" stop-color="#150d2e"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="0.55" stop-color="#d946ef"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#d946ef" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#d946ef" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="230" cy="140" r="320" fill="url(#glowA)"/>
+  <circle cx="1010" cy="430" r="300" fill="url(#glowB)"/>
+
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif">
+    <rect x="70" y="60" width="1060" height="630" rx="22" fill="#0a0718" stroke="#2c2350" stroke-width="2"/>
+
+    <rect x="70" y="60" width="1060" height="60" rx="22" fill="#120c28"/>
+    <rect x="70" y="100" width="1060" height="20" fill="#120c28"/>
+    <circle cx="104" cy="90" r="7" fill="#f87171"/>
+    <circle cx="128" cy="90" r="7" fill="#fbbf24"/>
+    <circle cx="152" cy="90" r="7" fill="#34d399"/>
+
+    <rect x="102" y="112" width="30" height="30" rx="9" fill="url(#brand)"/>
+    <text x="117" y="132" fill="#ffffff" font-size="13" font-weight="800" text-anchor="middle">MP</text>
+    <text x="142" y="132" fill="#ffffff" font-size="16" font-weight="700">Metro<tspan fill="#e879f9">Pulse</tspan></text>
+
+    <g fill="#8b93ad" font-size="12" font-weight="600">
+      <text x="620" y="131">Dashboard</text>
+      <text x="710" y="131">Cities</text>
+      <text x="774" y="131">People</text>
+      <text x="850" y="131">Contact</text>
+    </g>
+    <rect x="940" y="108" width="150" height="34" rx="17" fill="url(#brand)"/>
+    <text x="1015" y="130" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">Get in touch</text>
+
+    <rect x="360" y="176" width="200" height="26" rx="13" fill="#d946ef" fill-opacity="0.12" stroke="#d946ef" stroke-opacity="0.35"/>
+    <text x="460" y="194" fill="#f0abfc" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">CITY DATA PLATFORM</text>
+
+    <text x="600" y="256" fill="#ffffff" font-size="42" font-weight="800" text-anchor="middle">One dashboard for</text>
+    <text x="600" y="312" fill="url(#brand)" font-size="46" font-weight="800" text-anchor="middle">cities &amp; people</text>
+    <text x="600" y="352" fill="#8b93ad" font-size="15" text-anchor="middle">Real-time urban data, population records and residents — powered by Next.js &amp; FastAPI.</text>
+
+    <g>
+      <rect x="300" y="386" width="180" height="66" rx="14" fill="#171033" stroke="#2c2350"/>
+      <text x="390" y="418" fill="#ffffff" font-size="22" font-weight="800" text-anchor="middle">120+</text>
+      <text x="390" y="438" fill="#9aa0b5" font-size="11" text-anchor="middle">Connected Cities</text>
+
+      <rect x="500" y="386" width="180" height="66" rx="14" fill="#171033" stroke="#2c2350"/>
+      <text x="590" y="418" fill="#ffffff" font-size="22" font-weight="800" text-anchor="middle">48K</text>
+      <text x="590" y="438" fill="#9aa0b5" font-size="11" text-anchor="middle">Tracked Residents</text>
+
+      <rect x="700" y="386" width="180" height="66" rx="14" fill="#171033" stroke="#2c2350"/>
+      <text x="790" y="418" fill="#ffffff" font-size="22" font-weight="800" text-anchor="middle">15K</text>
+      <text x="790" y="438" fill="#9aa0b5" font-size="11" text-anchor="middle">Data Points / Day</text>
+    </g>
+
+    <rect x="300" y="480" width="580" height="180" rx="16" fill="#171033" stroke="#2c2350"/>
+    <text x="326" y="512" fill="#c4b5fd" font-size="13" font-weight="700">CITIES DIRECTORY</text>
+    <text x="854" y="512" fill="#f0abfc" font-size="11" font-weight="700" text-anchor="end">LIVE</text>
+    <circle cx="822" cy="508" r="4" fill="#34d399"/>
+
+    <g>
+      <rect x="326" y="530" width="528" height="34" rx="9" fill="#0f0a22"/>
+      <text x="344" y="552" fill="#ffffff" font-size="13" font-weight="600">Multan</text>
+      <text x="836" y="552" fill="#e879f9" font-size="13" font-weight="700" text-anchor="end">1,871,843</text>
+
+      <rect x="326" y="572" width="528" height="34" rx="9" fill="#0f0a22"/>
+      <text x="344" y="594" fill="#ffffff" font-size="13" font-weight="600">Lahore</text>
+      <text x="836" y="594" fill="#e879f9" font-size="13" font-weight="700" text-anchor="end">13,095,500</text>
+
+      <rect x="326" y="614" width="528" height="34" rx="9" fill="#0f0a22"/>
+      <text x="344" y="636" fill="#ffffff" font-size="13" font-weight="600">Karachi</text>
+      <text x="836" y="636" fill="#e879f9" font-size="13" font-weight="700" text-anchor="end">16,459,600</text>
+    </g>
+  </g>
+</svg>
