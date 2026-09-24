@@ -53,7 +53,7 @@ export default function AboutPage() {
                                 <div className="glow-border absolute -inset-3 rounded-3xl" aria-hidden="true" />
                                 <div className="relative overflow-hidden rounded-3xl">
                                     <Image
-                                        src="/assets/banner/moni.jpg"
+                                        src="/assets/self/Moeen.jpg"
                                         alt={profile.name}
                                         width={500}
                                         height={800}

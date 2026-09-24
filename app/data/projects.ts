@@ -17,38 +17,7 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-    {
-        slug: "myself-xdeveloper",
-        title: "X Developer — Personal Brand & Portfolio Website",
-        category: "Personal Brand",
-        year: "2026",
-        client: "Moeen Ul Qadir",
-        role: "Full Stack Developer",
-        image: "/assets/projects/myself-xdeveloper.svg",
-        gradient: ["#19f0c0", "#7c5cff"],
-        summary:
-            "A modern, production-ready personal brand website for X Developer with a cyber-green → violet identity, built on Next.js 16 and deployed on Vercel.",
-        description: [
-            "X Developer is a complete personal brand website built to showcase full stack development and DevOps services. Engineered with Next.js 16 (App Router), React 19, TypeScript and Tailwind CSS, it delivers a fast, SEO-friendly, statically prerendered experience.",
-            "The design system rebrands around a distinguishing cyber-green (volt) → sky-blue → violet gradient on a deep ink background, with a custom X mark favicon, marquee tech strip, animated hero glows, skill bars and a mailto-powered contact flow wired to myselfxdeveloper@gmail.com.",
-            "The site is 100% deploy-ready for Vercel: framework auto-detected (Next.js), Node 20 via .nvmrc, zero build warnings, zero lint errors and no known dependencies advisories at build time.",
-        ],
-        highlights: [
-            "Rebranded identity — X Developer with volt/neon gradient theme on ink surface",
-            "Next.js 16 + React 19 + TypeScript + Tailwind CSS, fully typed and lint-clean",
-            "Statically prerendered singleton page with sitemap, robots and custom icon",
-            "Deploy-ready for Vercel as https://myself-xdeveloper.vercel.app",
-        ],
-        features: [
-            "Animated hero with floating aurora glows & tech marquee",
-            "Services, skills-progress, projects grid & contact sections",
-            "Mailto-powered contact form wired to personal email",
-            "SEO metadata, canonical, Open Graph & twitter cards",
-        ],
-        stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "Vercel"],
-        links: { live: "https://myself-xdeveloper.vercel.app/" },
-        featured: true,
-    },
+   
     {
         slug: "callsense-saas",
         title: "Callsense — AI-Powered Call Center SaaS",
@@ -87,7 +56,7 @@ export const projects: Project[] = [
         year: "2023",
         client: "Augier.ai (New York)",
         role: "Front End Developer",
-        image: "/assets/projects/augier.svg",
+        image: "/assets/projects/augier1.png",
         gradient: ["#184a79", "#38bdf8"],
         summary:
             "Responsive, high-converting front-end development for a US-based legal technology company.",
@@ -111,6 +80,7 @@ export const projects: Project[] = [
         links: { live: "https://www.augier.ai/" },
         featured: true,
     },
+    
     {
         slug: "apostol-multilang-landing",
         title: "Apostol & Asociatii — Multilingual Business Landing Page",
@@ -232,6 +202,38 @@ export const projects: Project[] = [
         ],
         stack: ["Next.js", "React.js", "REST APIs", "Tailwind CSS"],
         links: { live: "https://crypto-nextjs.netlify.app/" },
+    },
+     {
+        slug: "myself-xdeveloper",
+        title: "X Developer — Personal Brand & Portfolio Website",
+        category: "Personal Brand",
+        year: "2026",
+        client: "Moeen Ul Qadir",
+        role: "Full Stack Developer",
+        image: "/assets/projects/myself-xdeveloper.svg",
+        gradient: ["#19f0c0", "#7c5cff"],
+        summary:
+            "A modern, production-ready personal brand website for X Developer with a cyber-green → violet identity, built on Next.js 16 and deployed on Vercel.",
+        description: [
+            "X Developer is a complete personal brand website built to showcase full stack development and DevOps services. Engineered with Next.js 16 (App Router), React 19, TypeScript and Tailwind CSS, it delivers a fast, SEO-friendly, statically prerendered experience.",
+            "The design system rebrands around a distinguishing cyber-green (volt) → sky-blue → violet gradient on a deep ink background, with a custom X mark favicon, marquee tech strip, animated hero glows, skill bars and a mailto-powered contact flow wired to myselfxdeveloper@gmail.com.",
+            "The site is 100% deploy-ready for Vercel: framework auto-detected (Next.js), Node 20 via .nvmrc, zero build warnings, zero lint errors and no known dependencies advisories at build time.",
+        ],
+        highlights: [
+            "Rebranded identity — X Developer with volt/neon gradient theme on ink surface",
+            "Next.js 16 + React 19 + TypeScript + Tailwind CSS, fully typed and lint-clean",
+            "Statically prerendered singleton page with sitemap, robots and custom icon",
+            "Deploy-ready for Vercel as https://myself-xdeveloper.vercel.app",
+        ],
+        features: [
+            "Animated hero with floating aurora glows & tech marquee",
+            "Services, skills-progress, projects grid & contact sections",
+            "Mailto-powered contact form wired to personal email",
+            "SEO metadata, canonical, Open Graph & twitter cards",
+        ],
+        stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "Vercel"],
+        links: { live: "https://myself-xdeveloper.vercel.app/" },
+        featured: true,
     },
     {
         slug: "3d-company-landing",

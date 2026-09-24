@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         locale: "en_US",
         images: [
             {
-                url: `${siteUrl}/assets/banner/moni.jpg`,
+                url: `${siteUrl}/assets/self/MOON.jpg`,
                 width: 500,
                 height: 800,
                 alt: `${profile.name} — Full Stack Software Engineer`,
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
         title: `${profile.name} — Full Stack Software Engineer`,
         description:
             "Full Stack Software Engineer with 5+ years of experience building scalable web apps, cloud infrastructure and AI-powered products.",
-        images: [`${siteUrl}/assets/banner/moni.jpg`],
+        images: [`${siteUrl}/assets/self/MOON.jpg`],
     },
     robots: {
         index: true,

@@ -177,12 +177,12 @@ export default function Hero() {
                             className="group relative h-[34rem] w-[28rem] max-w-full overflow-hidden rounded-[2.5rem] bg-ink-700/70 backdrop-blur"
                         >
                             <Image
-                                src="/assets/banner/moni.jpg"
+                                src="/assets/self/MOON.jpg"
                                 alt={`Portrait of ${profile.name}, Full Stack Software Engineer`}
                                 width={500}
                                 height={800}
                                 priority
-                                className="h-full w-full scale-[1.03] object-cover opacity-95 mix-blend-luminosity transition-transform duration-[1000ms] ease-out-expo group-hover:scale-[1.14]"
+                                className="h-full w-full scale-[1.03] object-cover  transition-transform duration-[1000ms] ease-out-expo group-hover:scale-[1.14]"
                             />
                             <div className="pointer-events-none absolute inset-0 rounded-[2.5rem] bg-gradient-to-t from-ink/95 via-transparent to-transparent" />
 
