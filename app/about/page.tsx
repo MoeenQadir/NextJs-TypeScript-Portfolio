@@ -231,7 +231,7 @@ export default function AboutPage() {
                         <Reveal delay={0.1} className="mt-10">
                             <a
                                 href={profile.resumeUrl}
-                                download="Moeen-Ul-Qadir-Resume.pdf"
+                                download="Moon.pdf"
                                 className="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-7 py-3.5 text-sm font-semibold text-ink transition-transform hover:scale-105"
                             >
                                 <Icon name="download" size={18} />

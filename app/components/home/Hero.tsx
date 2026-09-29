@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import SceneLoader from "../three/SceneLoader";
 import MoonLoader from "../ui/MoonLoader";
 import Icon from "../ui/Icon";
@@ -22,35 +21,6 @@ const itemVariants = {
         transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const },
     },
 };
-
-function RotatingRole() {
-    const [index, setIndex] = useState(0);
-
-    useEffect(() => {
-        const id = setInterval(() => {
-            setIndex((i) => (i + 1) % profile.heroRoles.length);
-        }, 3000);
-        return () => clearInterval(id);
-    }, []);
-
-    return (
-        <span className="relative inline-block min-w-max text-gold">
-            <AnimatePresence mode="wait">
-                <motion.span
-                    key={profile.heroRoles[index]}
-                    initial={{ opacity: 0, y: 14 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -14 }}
-                    transition={{ duration: 0.35 }}
-                    className="inline-block"
-                >
-                    {profile.heroRoles[index]}
-                </motion.span>
-            </AnimatePresence>
-            <span className="absolute -bottom-1 left-0 h-[3px] w-full rounded-full bg-gradient-gold" />
-        </span>
-    );
-}
 
 export default function Hero() {
     return (
@@ -94,11 +64,9 @@ export default function Hero() {
                         variants={itemVariants}
                         className="mt-6 text-4xl font-extrabold leading-[1.08] text-white sm:text-5xl lg:text-6xl"
                     >
-                        Hi, I&apos;m{" "}
-                        <span className="text-gradient-gold">Moeen</span>{" "}
-                        —
+                        Hi, I&apos;m Moeen —
                         <br />
-                        <RotatingRole />
+                        <span className="text-gradient-gold">{profile.role}</span>
                     </motion.h1>
 
                     <motion.p
@@ -128,9 +96,10 @@ export default function Hero() {
                                 className="transition-transform group-hover:translate-x-1"
                             />
                         </Link>
+
                         <a
                             href={profile.resumeUrl}
-                            download="Moeen-Ul-Qadir-Resume.pdf"
+                            download="Moon.pdf"
                             className="glass inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:border-gold/40 hover:shadow-[0_0_30px_rgba(255,185,0,0.2)]"
                         >
                             <Icon name="download" size={18} />
@@ -200,13 +169,19 @@ export default function Hero() {
                             >
                                 <div className="flex items-center justify-between gap-4">
                                     <div>
-                                        <p className="text-sm font-bold text-white">{profile.shortName} Ul Qadir</p>
-                                        <p className="text-xs text-slate-soft">Full Stack Developer</p>
+                                        <p className="text-sm font-bold text-white">
+                                            {profile.shortName} Ul Qadir
+                                        </p>
+                                        <p className="text-xs text-slate-soft">
+                                            Full Stack Developer
+                                        </p>
                                     </div>
                                     <div className="flex gap-3 text-center">
                                         {profile.stats.slice(0, 2).map((s) => (
                                             <div key={s.label}>
-                                                <p className="text-lg font-extrabold text-gold">{s.value}</p>
+                                                <p className="text-lg font-extrabold text-gold">
+                                                    {s.value}
+                                                </p>
                                                 <p className="text-[10px] uppercase tracking-wider text-slate-soft">
                                                     {s.label}
                                                 </p>

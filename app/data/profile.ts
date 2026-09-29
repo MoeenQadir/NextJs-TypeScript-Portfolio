@@ -27,7 +27,7 @@ export const profile = {
     github: "https://github.com/MoeenQadir",
     facebook: "https://www.facebook.com/profile.php?id=100081518093414",
     fiverr: "https://www.fiverr.com/moon_khan_",
-    resumeUrl: "/assets/CV/Muhammad_Moeen_Ul_Qadir_CV.pdf",
+    resumeUrl: "/assets/CV/Moon.pdf",
     availability: "Available for freelance & full-time roles",
     nationality: "Pakistani",
     languages: [
