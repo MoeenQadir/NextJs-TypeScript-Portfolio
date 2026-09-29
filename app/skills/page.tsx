@@ -8,6 +8,9 @@ import Marquee from "../components/ui/Marquee";
 import Icon from "../components/ui/Icon";
 import { Stagger, StaggerItem, Reveal } from "../components/ui/Reveal";
 import { skillCategories } from "../data/skills";
+import { profile } from "../data/profile";
+
+const siteUrl = "https://www.moeen.site";
 
 export const metadata: Metadata = {
     title: "Skills & Technologies",
@@ -15,9 +18,62 @@ export const metadata: Metadata = {
         "Explore the full skill set of Moeen Ul Qadir: TypeScript, React, Next.js, Node.js, PostgreSQL, Docker, AWS, DevOps, AI engineering, software architecture, testing and security.",
     alternates: { canonical: "/skills" },
     openGraph: {
+        type: "website",
+        url: `${siteUrl}/skills`,
+        siteName: "Moeen Ul Qadir Portfolio",
         title: "Skills & Technologies — Moeen Ul Qadir",
         description:
             "50+ technologies across frontend, backend, DevOps, cloud, AI engineering and architecture.",
+        locale: "en_US",
+        images: [
+            {
+                url: `${siteUrl}/assets/self/MOON.jpg`,
+                width: 1200,
+                height: 630,
+                alt: "Moeen Ul Qadir — Skills & Technologies",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Skills & Technologies — Moeen Ul Qadir",
+        description:
+            "50+ technologies across frontend, backend, DevOps, cloud, AI engineering and architecture.",
+        images: [`${siteUrl}/assets/self/MOON.jpg`],
+    },
+    robots: {
+        index: true,
+        follow: true,
+    },
+};
+
+const skillsJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Skills & Technologies",
+    description:
+        "Explore the full skill set of Moeen Ul Qadir across frontend, backend, DevOps, cloud, AI engineering and architecture.",
+    url: `${siteUrl}/skills`,
+    author: {
+        "@type": "Person",
+        name: profile.name,
+        url: siteUrl,
+    },
+    publisher: {
+        "@type": "Person",
+        name: profile.name,
+    },
+    mainEntity: {
+        "@type": "ItemList",
+        name: "Technical Skills",
+        itemListElement: skillCategories.flatMap((category, catIndex) =>
+            category.skills.map((skill, skillIndex) => ({
+                "@type": "ListItem",
+                position: catIndex * 100 + skillIndex + 1,
+                name: skill.name,
+                description: `${category.title}: ${skill.name} (Proficiency: ${skill.level}%)`,
+            }))
+        ),
     },
 };
 
@@ -112,6 +168,10 @@ export default function SkillsPage() {
             </section>
 
             <CTASection />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(skillsJsonLd) }}
+            />
         </>
     );
 }

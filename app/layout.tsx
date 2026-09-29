@@ -4,6 +4,9 @@ import { Poppins } from "next/font/google";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import CustomCursor from "./components/ui/CustomCursor";
+import Breadcrumb from "./components/ui/Breadcrumb";
+import ScrollProgress from "./components/ui/ScrollProgress";
+import { ScrollToTop } from "./components/ui/ScrollProgress";
 import { profile } from "./data/profile";
 
 const poppins = Poppins({
@@ -13,7 +16,7 @@ const poppins = Poppins({
     variable: "--font-poppins",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.moeenqadir.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.moeen.site";
 
 export const metadata: Metadata = {
     metadataBase: new URL(siteUrl),
@@ -86,7 +89,7 @@ const personJsonLd = {
     givenName: "Muhammad Moeen",
     familyName: "Ul Qadir",
     jobTitle: "Full Stack Software Engineer",
-    url: profile.website,
+    url: siteUrl,
     email: `mailto:${profile.email}`,
     telephone: profile.phone,
     address: {
@@ -117,6 +120,43 @@ const personJsonLd = {
     },
 };
 
+const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Moeen Ul Qadir Portfolio",
+    url: siteUrl,
+    author: {
+        "@type": "Person",
+        name: profile.name,
+        url: siteUrl,
+    },
+    publisher: {
+        "@type": "Person",
+        name: profile.name,
+    },
+};
+
+const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Moeen Ul Qadir",
+    url: siteUrl,
+    logo: `${siteUrl}/assets/self/MOON.jpg`,
+    sameAs: [
+        profile.linkedin,
+        profile.github,
+        profile.facebook,
+        profile.fiverr,
+    ],
+    contactPoint: {
+        "@type": "ContactPoint",
+        telephone: profile.phone,
+        contactType: "customer service",
+        email: profile.email,
+        availableLanguage: ["English", "Urdu"],
+    },
+};
+
 export default function RootLayout({
     children,
 }: {
@@ -133,11 +173,22 @@ export default function RootLayout({
                 </a>
                 <CustomCursor />
                 <Navbar />
+                <Breadcrumb />
+                <ScrollProgress />
                 <main id="main">{children}</main>
                 <Footer />
+                <ScrollToTop />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
                 />
             </body>
         </html>

@@ -8,16 +8,116 @@ import { Stagger, StaggerItem, Reveal } from "../components/ui/Reveal";
 import { services } from "../data/services";
 import { profile } from "../data/profile";
 
+const siteUrl = "https://www.moeen.site";
+
 export const metadata: Metadata = {
     title: "Services",
     description:
         "Professional services from Moeen Ul Qadir: full stack development, DevOps & cloud, software architecture & design, AI engineering, API integration, and performance & security optimization.",
     alternates: { canonical: "/services" },
     openGraph: {
+        type: "website",
+        url: `${siteUrl}/services`,
+        siteName: "Moeen Ul Qadir Portfolio",
         title: "Services — Moeen Ul Qadir",
         description:
             "Full stack development, DevOps & cloud, software architecture, AI engineering and more.",
+        locale: "en_US",
+        images: [
+            {
+                url: `${siteUrl}/assets/self/MOON.jpg`,
+                width: 1200,
+                height: 630,
+                alt: "Moeen Ul Qadir — Services",
+            },
+        ],
     },
+    twitter: {
+        card: "summary_large_image",
+        title: "Services — Moeen Ul Qadir",
+        description:
+            "Full stack development, DevOps & cloud, software architecture, AI engineering and more.",
+        images: [`${siteUrl}/assets/self/MOON.jpg`],
+    },
+    robots: {
+        index: true,
+        follow: true,
+    },
+};
+
+const servicesJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Software Engineering Services",
+    provider: {
+        "@type": "Person",
+        name: profile.name,
+        url: siteUrl,
+    },
+    areaServed: "Worldwide",
+    availableChannel: {
+        "@type": "ServiceChannel",
+        serviceUrl: `${siteUrl}/contact`,
+        servicePhone: profile.phone,
+        serviceEmail: profile.email,
+    },
+    hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Software Engineering Services",
+        itemListElement: services.map((service, index) => ({
+            "@type": "Offer",
+            position: index + 1,
+            itemOffered: {
+                "@type": "Service",
+                name: service.title,
+                description: service.description,
+                provider: {
+                    "@type": "Person",
+                    name: profile.name,
+                    url: siteUrl,
+                },
+            },
+        })),
+    },
+};
+
+const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+        {
+            "@type": "Question",
+            name: "What kind of projects do you take on?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Web applications, SaaS platforms, dashboards, e-commerce, landing pages, DevOps setups, API integrations and AI-powered features. Scope ranges from single pages to full platforms.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "How do you price your work?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Fixed-price for well-defined scopes, hourly for ongoing collaboration, or monthly retainers. I'll recommend what fits your project best after a short discovery call.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Can you work as part of an existing team?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Absolutely. I've spent years collaborating with design teams, backend engineers and product managers — internationally and remotely.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "What's your typical turnaround time?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Landing pages ship in days, full web apps in weeks. I share a sprint-style plan up front so expectations are always clear.",
+            },
+        },
+    ],
 };
 
 const processSteps = [
@@ -191,6 +291,14 @@ export default function ServicesPage() {
             </section>
 
             <CTASection />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+            />
         </>
     );
 }

@@ -17,6 +17,42 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+    {
+        slug: "pulsewatch-uptime-monitoring",
+        title: "PulseWatch — Uptime & Status Monitoring Platform",
+        category: "SaaS Platform",
+        year: "2026",
+        client: "PulseWatch (Personal Project)",
+        role: "Full Stack Software Engineer",
+        image: "/assets/projects/pulsewatch.svg",
+        gradient: ["#22d3ee", "#6366f1"],
+        summary:
+            "A production-grade uptime monitoring SaaS with HTTP/TCP checks, 90-day uptime analytics, incident tracking, signed webhooks, public status pages and a rate-limited REST API — Next.js, Prisma, Redis, Docker and CI.",
+        description: [
+            "PulseWatch is a full-stack monitoring platform that watches websites, APIs and infrastructure around the clock. Users register monitors for HTTP(S) endpoints or raw TCP ports with configurable intervals (30s–1h), timeouts, retries and expected status codes; a background scheduler probes each target, records latency for every check and auto-opens incidents when a monitor goes down — then auto-resolves them on recovery.",
+            "The frontend is a Next.js 14 App Router application in strict TypeScript: a marketing site, JWT-cookie auth flows, a monitoring console with 90-day uptime bar strips, a 24h latency chart (Recharts), incident timelines and a public status page per account. A dependency-free Redis RESP client powers a two-tier cache with in-memory fallback, so the same build runs on a VPS with Docker Compose or on Vercel with zero infrastructure.",
+            "Engineering quality is a first-class feature: Zod-validated API routes with per-IP rate limiting, HMAC-SHA256 signed webhooks, bcrypt-hashed API keys, middleware session gating, 29 Vitest unit tests over the core libraries (uptime math, check engine, rate limiter, key hashing), multi-stage Docker build and a GitHub Actions pipeline running lint, typecheck, tests and build on every push.",
+        ],
+        highlights: [
+            "Built a complete monitoring SaaS end-to-end: check engine, scheduler, incident lifecycle and public status pages",
+            "Implemented HTTP + TCP probing with timeout, retries and status-code expectations — zero external dependencies",
+            "Designed a two-tier cache with a dependency-free Redis RESP client and automatic in-memory fallback",
+            "Shipped HMAC-signed webhooks, bcrypt-hashed API keys and Zod-validated, rate-limited REST endpoints",
+            "Verified with 29 Vitest unit tests, strict TypeScript, ESLint-clean build and GitHub Actions CI",
+            "Containerized with a multi-stage Dockerfile and Docker Compose stack (app + PostgreSQL + Redis)",
+        ],
+        features: [
+            "HTTP(S) & TCP monitors with interval, timeout, retries & expected status",
+            "90-day uptime bar strips + 24h response-time chart with p95 stats",
+            "Auto-opened/resolved incidents with investigate → resolve workflow",
+            "Public status page per account with live availability",
+            "Signed webhooks (MONITOR_DOWN / MONITOR_UP) to any HTTPS endpoint",
+            "REST API with session or API-key auth, cached status JSON",
+        ],
+        stack: ["Next.js 14", "TypeScript", "Prisma", "PostgreSQL", "Redis", "Tailwind CSS", "Recharts", "Zod", "Vitest", "Docker", "GitHub Actions"],
+        links: { github: "https://github.com/MoeenQadir" },
+        featured: true,
+    },
    
     {
         slug: "callsense-saas",
@@ -293,7 +329,7 @@ export const projects: Project[] = [
             "Sitemap, robots & OG meta pipeline",
         ],
         stack: ["Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Framer Motion"],
-        links: { live: "https://www.moeenqadir.com", github: "https://github.com/MoeenQadir" },
+        links: { live: "https://www.moeen.site", github: "https://github.com/MoeenQadir" },
         featured: true,
     },
     {

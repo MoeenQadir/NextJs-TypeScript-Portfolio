@@ -14,11 +14,78 @@ import { featuredProjects } from "./data/projects";
 import { profile } from "./data/profile";
 import type { Metadata } from "next";
 
+const siteUrl = "https://www.moeen.site";
+
 export const metadata: Metadata = {
     title: "Moeen Ul Qadir — Full Stack Software Engineer",
     description:
         "Full Stack Software Engineer with 5+ years of experience in Next.js, React, Node.js, DevOps, cloud & AI engineering. Explore projects, services and skills.",
     alternates: { canonical: "/" },
+    openGraph: {
+        type: "website",
+        url: siteUrl,
+        siteName: "Moeen Ul Qadir Portfolio",
+        title: "Moeen Ul Qadir — Full Stack Software Engineer",
+        description:
+            "Full Stack Software Engineer with 5+ years of experience building scalable web apps, cloud infrastructure and AI-powered products.",
+        locale: "en_US",
+        images: [
+            {
+                url: `${siteUrl}/assets/self/MOON.jpg`,
+                width: 1200,
+                height: 630,
+                alt: "Moeen Ul Qadir — Full Stack Software Engineer",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Moeen Ul Qadir — Full Stack Software Engineer",
+        description:
+            "Full Stack Software Engineer with 5+ years of experience building scalable web apps, cloud infrastructure and AI-powered products.",
+        images: [`${siteUrl}/assets/self/MOON.jpg`],
+    },
+    robots: {
+        index: true,
+        follow: true,
+    },
+    other: {
+        "theme-color": "#05070f",
+    },
+};
+
+const homeJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Moeen Ul Qadir — Full Stack Software Engineer",
+    description:
+        "Full Stack Software Engineer with 5+ years of experience in Next.js, React, Node.js, DevOps, cloud & AI engineering.",
+    url: siteUrl,
+    author: {
+        "@type": "Person",
+        name: profile.name,
+        url: siteUrl,
+    },
+    publisher: {
+        "@type": "Person",
+        name: profile.name,
+    },
+    mainEntity: {
+        "@type": "Person",
+        name: profile.name,
+        jobTitle: "Full Stack Software Engineer",
+        url: siteUrl,
+        knowsAbout: [
+            "Full Stack Development",
+            "Next.js",
+            "React.js",
+            "Node.js",
+            "DevOps",
+            "Cloud Infrastructure",
+            "AI Engineering",
+            "Software Architecture",
+        ],
+    },
 };
 
 const aboutBullets = [
@@ -169,6 +236,10 @@ export default function Home() {
             </section>
 
             <CTASection />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
+            />
         </>
     );
 }

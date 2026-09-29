@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { projects } from "./data/projects";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.moeenqadir.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.moeen.site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const now = new Date();

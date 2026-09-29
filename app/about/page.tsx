@@ -11,15 +11,40 @@ import { Reveal, Stagger, StaggerItem } from "../components/ui/Reveal";
 import { experience, education, timelineFacts } from "../data/experience";
 import { profile } from "../data/profile";
 
+const siteUrl = "https://www.moeen.site";
+
 export const metadata: Metadata = {
     title: "About Me",
     description:
         "Learn about Moeen Ul Qadir — a full stack software engineer with 5+ years of experience across web development, DevOps, software architecture, AI engineering and IT operations.",
     alternates: { canonical: "/about" },
     openGraph: {
+        type: "website",
+        url: `${siteUrl}/about`,
+        siteName: "Moeen Ul Qadir Portfolio",
         title: "About Moeen Ul Qadir — Full Stack Software Engineer",
         description:
             "Full stack engineer specialising in Next.js, React, Node.js, DevOps, cloud and AI engineering.",
+        locale: "en_US",
+        images: [
+            {
+                url: `${siteUrl}/assets/self/Moeen.jpg`,
+                width: 500,
+                height: 800,
+                alt: "Moeen Ul Qadir",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "About Moeen Ul Qadir — Full Stack Software Engineer",
+        description:
+            "Full stack engineer specialising in Next.js, React, Node.js, DevOps, cloud and AI engineering.",
+        images: [`${siteUrl}/assets/self/Moeen.jpg`],
+    },
+    robots: {
+        index: true,
+        follow: true,
     },
 };
 
@@ -27,11 +52,39 @@ const aboutJsonLd = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: "About Moeen Ul Qadir",
-    url: `${profile.website}/about`,
+    url: `${siteUrl}/about`,
     mainEntity: {
         "@type": "Person",
         name: profile.name,
-        url: profile.website,
+        url: siteUrl,
+        jobTitle: "Full Stack Software Engineer",
+        worksFor: {
+            "@type": "Organization",
+            name: "Freelance",
+        },
+        knowsAbout: [
+            "Full Stack Development",
+            "Next.js",
+            "React.js",
+            "Node.js",
+            "DevOps",
+            "Cloud Infrastructure",
+            "AI Engineering",
+            "Software Architecture",
+        ],
+        alumniOf: {
+            "@type": "CollegeOrUniversity",
+            name: "University of Education Lahore",
+        },
+    },
+    author: {
+        "@type": "Person",
+        name: profile.name,
+        url: siteUrl,
+    },
+    publisher: {
+        "@type": "Person",
+        name: profile.name,
     },
 };
 

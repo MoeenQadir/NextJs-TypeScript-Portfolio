@@ -106,13 +106,14 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
+<div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
                     <p className="text-sm text-slate-soft">
                         © {new Date().getFullYear()} {profile.name}. All rights reserved.
                     </p>
                     <p className="text-sm text-slate-soft">
-                        Built with <span className="text-gold">Next.js</span>, TypeScript
-                        &amp; <span className="text-gold">Three.js</span>
+                        <a href="https://www.moeen.site" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">
+                            www.moeen.site
+                        </a>
                     </p>
                     <a
                         href="#top"

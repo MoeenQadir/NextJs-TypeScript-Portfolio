@@ -6,15 +6,70 @@ import { Reveal, Stagger, StaggerItem } from "../components/ui/Reveal";
 import ContactForm from "./ContactForm";
 import { profile, socialLinks } from "../data/profile";
 
+const siteUrl = "https://www.moeen.site";
+
 export const metadata: Metadata = {
     title: "Contact",
     description:
         "Get in touch with Moeen Ul Qadir — full stack software engineer available for freelance projects and full-time roles. Email, WhatsApp or send a project enquiry.",
     alternates: { canonical: "/contact" },
     openGraph: {
+        type: "website",
+        url: `${siteUrl}/contact`,
+        siteName: "Moeen Ul Qadir Portfolio",
         title: "Contact Moeen Ul Qadir",
         description:
             "Available for freelance projects and full-time software engineering roles.",
+        locale: "en_US",
+        images: [
+            {
+                url: `${siteUrl}/assets/self/MOON.jpg`,
+                width: 1200,
+                height: 630,
+                alt: "Contact Moeen Ul Qadir",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact Moeen Ul Qadir",
+        description:
+            "Available for freelance projects and full-time software engineering roles.",
+        images: [`${siteUrl}/assets/self/MOON.jpg`],
+    },
+    robots: {
+        index: true,
+        follow: true,
+    },
+};
+
+const contactJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact Moeen Ul Qadir",
+    url: `${siteUrl}/contact`,
+    mainEntity: {
+        "@type": "Person",
+        name: profile.name,
+        url: siteUrl,
+        email: `mailto:${profile.email}`,
+        telephone: profile.phone,
+        address: {
+            "@type": "PostalAddress",
+            addressLocality: "Multan",
+            addressRegion: "Punjab",
+            addressCountry: "PK",
+        },
+        sameAs: [
+            profile.linkedin,
+            profile.github,
+            profile.facebook,
+            profile.fiverr,
+        ],
+    },
+    publisher: {
+        "@type": "Person",
+        name: profile.name,
     },
 };
 
@@ -169,6 +224,10 @@ export default function ContactPage() {
                     </aside>
                 </div>
             </section>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
+            />
         </>
     );
 }

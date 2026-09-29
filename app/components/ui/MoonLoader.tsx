@@ -10,10 +10,40 @@ import {
 } from "framer-motion";
 
 const TOTAL = 5.4;
+const SWEEP = 3.4;
 
+/**
+ * Cinematic moonlight intro.
+ *
+ * Renders `null` on the server AND on the first client render, so the markup
+ * always matches during hydration (no mismatch possible) and the dark veil can
+ * never get stuck over the hero if JS is slow, throttled or fails — it only
+ * exists after the app is confirmed interactive, and it always unmounts.
+ */
 export default function MoonLoader() {
-    const [visible, setVisible] = useState(true);
+    const [armed, setArmed] = useState(false);
+    const [done, setDone] = useState(false);
 
+    useEffect(() => {
+        let reduced = false;
+        try {
+            reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        } catch {
+            reduced = true;
+        }
+        if (reduced) return;
+
+        setArmed(true);
+        const t = window.setTimeout(() => setDone(true), TOTAL * 1000 + 400);
+        return () => window.clearTimeout(t);
+    }, []);
+
+    if (!armed || done) return null;
+
+    return <MoonVeil />;
+}
+
+function MoonVeil() {
     const progress = useMotionValue(0);
     const veil = useMotionValue(1);
     const moon = useMotionValue(0);
@@ -27,17 +57,9 @@ export default function MoonLoader() {
     const mask = useMotionTemplate`radial-gradient(circle 34vmax at ${x}% ${y}%, transparent 0%, rgba(0,0,0,0.28) 30%, rgba(0,0,0,0.75) 52%, #000 68%)`;
 
     useEffect(() => {
-        const reduced = window.matchMedia(
-            "(prefers-reduced-motion: reduce)"
-        ).matches;
-        if (reduced) {
-            setVisible(false);
-            return;
-        }
-
         const controls = [
             animate(progress, 1, {
-                duration: 3.4,
+                duration: SWEEP,
                 delay: 0.8,
                 ease: [0.5, 0, 0.15, 1],
             }),
@@ -57,15 +79,10 @@ export default function MoonLoader() {
                 ease: "easeInOut",
             }),
         ];
-
-        const done = window.setTimeout(() => setVisible(false), TOTAL * 1000 + 150);
         return () => {
             controls.forEach((c) => c.stop());
-            window.clearTimeout(done);
         };
     }, [progress, veil, moon, glow]);
-
-    if (!visible) return null;
 
     return (
         <motion.div

@@ -140,6 +140,7 @@ export default function ProjectDetailPage({ params }: Params) {
                             width={1200}
                             height={750}
                             priority
+                            unoptimized={project.image.endsWith(".svg")}
                             className="h-auto w-full object-cover"
                         />
                     </div>

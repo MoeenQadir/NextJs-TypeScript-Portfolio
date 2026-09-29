@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="PulseWatch uptime monitoring dashboard">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060a14"/>
+      <stop offset="1" stop-color="#0b1224"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.6" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="220" cy="150" r="330" fill="url(#glowA)"/>
+  <circle cx="1020" cy="450" r="300" fill="url(#glowB)"/>
+
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif">
+    <rect x="70" y="60" width="1060" height="630" rx="22" fill="#0a0e1a" stroke="#1c2743" stroke-width="2"/>
+
+    <!-- browser chrome -->
+    <rect x="70" y="60" width="1060" height="60" rx="22" fill="#0f1526"/>
+    <rect x="70" y="100" width="1060" height="20" fill="#0f1526"/>
+    <circle cx="104" cy="90" r="7" fill="#f87171"/>
+    <circle cx="128" cy="90" r="7" fill="#fbbf24"/>
+    <circle cx="152" cy="90" r="7" fill="#34d399"/>
+
+    <!-- logo -->
+    <rect x="102" y="112" width="30" height="30" rx="9" fill="#22d3ee" fill-opacity="0.15" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <path d="M109 127 l6 0 3 -8 5 16 4 -8 4 0" stroke="#22d3ee" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="142" y="132" fill="#ffffff" font-size="16" font-weight="700">Pulse<tspan fill="#22d3ee">Watch</tspan></text>
+
+    <g fill="#7d8aa5" font-size="12" font-weight="600">
+      <text x="640" y="131">Overview</text>
+      <text x="716" y="131">Incidents</text>
+      <text x="796" y="131">Settings</text>
+    </g>
+    <rect x="930" y="108" width="160" height="34" rx="10" fill="url(#brand)"/>
+    <text x="1010" y="130" fill="#060a14" font-size="12" font-weight="800" text-anchor="middle">+ New monitor</text>
+
+    <!-- badge -->
+    <rect x="380" y="176" width="440" height="26" rx="13" fill="#22d3ee" fill-opacity="0.1" stroke="#22d3ee" stroke-opacity="0.35"/>
+    <text x="600" y="194" fill="#67e8f9" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">UPTIME &amp; STATUS MONITORING PLATFORM</text>
+
+    <text x="600" y="248" fill="#ffffff" font-size="38" font-weight="800" text-anchor="middle">Know before your users do.</text>
+    <text x="600" y="280" fill="#7d8aa5" font-size="14" text-anchor="middle">HTTP &amp; TCP checks · 90-day uptime history · incident tracking · signed webhooks · public status pages</text>
+
+    <!-- stat cards -->
+    <g>
+      <rect x="120" y="312" width="220" height="76" rx="14" fill="#0f1526" stroke="#1c2743"/>
+      <text x="144" y="344" fill="#7d8aa5" font-size="10" font-weight="600" letter-spacing="1.5">UPTIME 24H</text>
+      <text x="144" y="374" fill="#ffffff" font-size="24" font-weight="800" font-family="JetBrains Mono, Consolas, monospace">99.98%</text>
+
+      <rect x="352" y="312" width="220" height="76" rx="14" fill="#0f1526" stroke="#1c2743"/>
+      <text x="376" y="344" fill="#7d8aa5" font-size="10" font-weight="600" letter-spacing="1.5">OPERATIONAL</text>
+      <text x="376" y="374" fill="#34d399" font-size="24" font-weight="800" font-family="JetBrains Mono, Consolas, monospace">6 / 7</text>
+
+      <rect x="584" y="312" width="220" height="76" rx="14" fill="#0f1526" stroke="#1c2743"/>
+      <text x="608" y="344" fill="#7d8aa5" font-size="10" font-weight="600" letter-spacing="1.5">DOWN RIGHT NOW</text>
+      <text x="608" y="374" fill="#f87171" font-size="24" font-weight="800" font-family="JetBrains Mono, Consolas, monospace">1</text>
+
+      <rect x="816" y="312" width="264" height="76" rx="14" fill="#0f1526" stroke="#1c2743"/>
+      <text x="840" y="344" fill="#7d8aa5" font-size="10" font-weight="600" letter-spacing="1.5">AVG RESPONSE 24H</text>
+      <text x="840" y="374" fill="#ffffff" font-size="24" font-weight="800" font-family="JetBrains Mono, Consolas, monospace">142 ms</text>
+    </g>
+
+    <!-- monitor rows with uptime bars -->
+    <g>
+      <rect x="120" y="412" width="960" height="80" rx="14" fill="#0f1526" stroke="#1c2743"/>
+      <circle cx="152" cy="446" r="5" fill="#34d399"/>
+      <text x="168" y="451" fill="#ffffff" font-size="14" font-weight="700">Marketing Site</text>
+      <text x="168" y="470" fill="#5b6780" font-size="10" font-family="JetBrains Mono, Consolas, monospace">https://pulsewatch.dev</text>
+      <text x="1044" y="446" fill="#ffffff" font-size="13" font-weight="700" text-anchor="end" font-family="JetBrains Mono, Consolas, monospace">99.99%</text>
+      <g>
+        <rect x="390" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="403" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="416" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="429" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="442" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="455" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="468" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="481" y="458" width="10" height="10" rx="2" fill="#f59e0b"/><rect x="494" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="507" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="520" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="533" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="546" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="559" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="572" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="585" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="598" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="611" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="624" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="637" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="650" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="663" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="676" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="689" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="702" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="715" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="728" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="741" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="754" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="767" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="780" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="793" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="806" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="819" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="832" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="845" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="858" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="871" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="884" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="897" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="910" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="923" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="936" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="949" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="962" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="975" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="988" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="1001" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="1014" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="1027" y="458" width="10" height="10" rx="2" fill="#10b981"/><rect x="1040" y="458" width="10" height="10" rx="2" fill="#10b981"/>
+      </g>
+
+      <rect x="120" y="504" width="960" height="80" rx="14" fill="#0f1526" stroke="#1c2743"/>
+      <circle cx="152" cy="538" r="5" fill="#f87171"/>
+      <text x="168" y="543" fill="#ffffff" font-size="14" font-weight="700">API Gateway</text>
+      <text x="168" y="562" fill="#5b6780" font-size="10" font-family="JetBrains Mono, Consolas, monospace">https://api.pulsewatch.dev/health</text>
+      <text x="1044" y="538" fill="#f87171" font-size="13" font-weight="700" text-anchor="end" font-family="JetBrains Mono, Consolas, monospace">98.50%</text>
+      <g>
+        <rect x="390" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="403" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="416" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="429" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="442" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="455" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="468" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="481" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="494" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="507" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="520" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="533" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="546" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="559" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="572" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="585" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="598" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="611" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="624" y="550" width="10" height="10" rx="2" fill="#ef4444"/><rect x="637" y="550" width="10" height="10" rx="2" fill="#ef4444"/><rect x="650" y="550" width="10" height="10" rx="2" fill="#ef4444"/><rect x="663" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="676" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="689" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="702" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="715" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="728" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="741" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="754" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="767" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="780" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="793" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="806" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="819" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="832" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="845" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="858" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="871" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="884" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="897" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="910" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="923" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="936" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="949" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="962" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="975" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="988" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="1001" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="1014" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="1027" y="550" width="10" height="10" rx="2" fill="#10b981"/><rect x="1040" y="550" width="10" height="10" rx="2" fill="#10b981"/>
+      </g>
+    </g>
+
+    <!-- footer chips -->
+    <g font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="600">
+      <rect x="120" y="612" width="96" height="26" rx="8" fill="#22d3ee" fill-opacity="0.08" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="168" y="629" fill="#67e8f9" text-anchor="middle">Next.js</text>
+      <rect x="228" y="612" width="102" height="26" rx="8" fill="#22d3ee" fill-opacity="0.08" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="279" y="629" fill="#67e8f9" text-anchor="middle">TypeScript</text>
+      <rect x="342" y="612" width="78" height="26" rx="8" fill="#22d3ee" fill-opacity="0.08" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="381" y="629" fill="#67e8f9" text-anchor="middle">Prisma</text>
+      <rect x="432" y="612" width="90" height="26" rx="8" fill="#22d3ee" fill-opacity="0.08" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="477" y="629" fill="#67e8f9" text-anchor="middle">Postgres</text>
+      <rect x="534" y="612" width="70" height="26" rx="8" fill="#22d3ee" fill-opacity="0.08" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="569" y="629" fill="#67e8f9" text-anchor="middle">Redis</text>
+      <rect x="616" y="612" width="72" height="26" rx="8" fill="#22d3ee" fill-opacity="0.08" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="652" y="629" fill="#67e8f9" text-anchor="middle">Docker</text>
+      <rect x="700" y="612" width="66" height="26" rx="8" fill="#22d3ee" fill-opacity="0.08" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="733" y="629" fill="#67e8f9" text-anchor="middle">CI/CD</text>
+      <rect x="778" y="612" width="72" height="26" rx="8" fill="#22d3ee" fill-opacity="0.08" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="814" y="629" fill="#67e8f9" text-anchor="middle">Vitest</text>
+    </g>
+  </g>
+</svg>

@@ -18,6 +18,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                         alt={`${project.title} — ${project.category} project by Moeen Ul Qadir`}
                         fill
                         sizes="(max-width: 768px) 100vw, 33vw"
+                        unoptimized={project.image.endsWith(".svg")}
                         className="object-cover transition-transform duration-700 ease-out-expo group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-ink-700 via-ink-700/30 to-transparent" />
