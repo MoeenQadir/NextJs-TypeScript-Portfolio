@@ -1,0 +1,41 @@
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3200
+
+ ✓ Starting...
+ ✓ Ready in 5.1s
+ ○ Compiling / ...
+ ✓ Compiled / in 13.4s (2369 modules)
+ GET / 200 in 15775ms
+ ✓ Compiled in 2.9s (1179 modules)
+ GET / 200 in 378ms
+ GET / 200 in 192ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 2.7s (2364 modules)
+ GET /about 200 in 4335ms
+ GET /about 200 in 233ms
+ ○ Compiling /services ...
+ ✓ Compiled /services in 1918ms (2369 modules)
+ GET /services 200 in 3200ms
+ GET /services 200 in 196ms
+ ○ Compiling /skills ...
+ ✓ Compiled /skills in 1387ms (2377 modules)
+ GET /skills 200 in 1938ms
+ GET /skills 200 in 153ms
+ ○ Compiling /projects ...
+ ✓ Compiled /projects in 1482ms (2386 modules)
+ GET /projects 200 in 2413ms
+ GET /projects 200 in 100ms
+ ○ Compiling /projects/[slug] ...
+ ✓ Compiled /projects/[slug] in 1772ms (2395 modules)
+ GET /projects/pulsewatch-uptime-monitoring 200 in 5372ms
+ GET /projects/pulsewatch-uptime-monitoring 200 in 102ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 2s (1800 modules)
+ GET /contact 200 in 3989ms
+ GET /contact 200 in 111ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1051ms (1777 modules)
+ GET /does-not-exist 404 in 1418ms
+ GET /does-not-exist 404 in 59ms
+ ✓ Compiled in 5.8s (1191 modules)
+ ✓ Compiled in 7.7s (1789 modules)

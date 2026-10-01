@@ -1,8 +1,9 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import SceneLoader from "../three/SceneLoader";
 import MoonLoader from "../ui/MoonLoader";
 import Icon from "../ui/Icon";
@@ -23,6 +24,21 @@ const itemVariants = {
 };
 
 export default function Hero() {
+    const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+    const [displayRole, setDisplayRole] = useState(profile.heroRoles[0]);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentRoleIndex((prev) => (prev + 1) % profile.heroRoles.length);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    useEffect(() => {
+        setDisplayRole(profile.heroRoles[currentRoleIndex]);
+    }, [currentRoleIndex]);
+
     return (
         <section className="relative flex min-h-[100svh] items-center overflow-hidden pb-20 pt-28 lg:pb-24">
             <div className="pointer-events-none absolute inset-0 grid-overlay" aria-hidden="true" />
@@ -66,19 +82,29 @@ export default function Hero() {
                     >
                         Hi, I&apos;m Moeen —
                         <br />
-                        <span className="text-gradient-gold">{profile.role}</span>
+                        <AnimatePresence mode="wait">
+                            <motion.span
+                                key={displayRole}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -20 }}
+                                transition={{ duration: 0.4, ease: "easeOut" }}
+                                className="inline-block text-gradient-gold"
+                            >
+                                {displayRole}
+                            </motion.span>
+                        </AnimatePresence>
                     </motion.h1>
 
                     <motion.p
                         variants={itemVariants}
-                        className="mt-6 max-w-2xl text-base leading-relaxed text-slate-soft sm:text-lg"
+                        className="mt-8 max-w-2xl text-base leading-relaxed text-slate-soft sm:text-lg"
                     >
-                        I engineer production-grade software end to end —{" "}
-                        <span className="text-mist">full stack products</span>,{" "}
-                        <span className="text-mist">cloud & DevOps infrastructure</span>{" "}
-                        and <span className="text-mist">AI-powered features</span>. 5+
-                        years of turning ambitious ideas into fast, secure and scalable
-                        systems.
+                        I build Financial Software, Trading Systems & Market Intelligence Platforms — 
+                        combining full-stack engineering with practical financial-market knowledge. 
+                        5+ years delivering algorithmic trading systems, market-data pipelines, 
+                        backtesting engines, risk-management systems, and FinTech dashboards 
+                        for startups, prop firms, and financial technology companies.
                     </motion.p>
 
                     <motion.div

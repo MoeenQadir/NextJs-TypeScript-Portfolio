@@ -14,17 +14,17 @@ import { profile } from "../data/profile";
 const siteUrl = "https://www.moeen.site";
 
 export const metadata: Metadata = {
-    title: "About Me",
+    title: "About Moeen Ul Qadir — Full-Stack Developer | FinTech & Trading Systems Engineer",
     description:
-        "Learn about Moeen Ul Qadir — a full stack software engineer with 5+ years of experience across web development, DevOps, software architecture, AI engineering and IT operations.",
+        "Learn about Moeen Ul Qadir — a Full-Stack Developer | FinTech & Trading Systems Engineer | Quantitative Trading Enthusiast with 5+ years of experience building algorithmic trading systems, market-data platforms, backtesting engines, risk-management systems, and FinTech dashboards.",
     alternates: { canonical: "/about" },
     openGraph: {
         type: "website",
         url: `${siteUrl}/about`,
         siteName: "Moeen Ul Qadir Portfolio",
-        title: "About Moeen Ul Qadir — Full Stack Software Engineer",
+        title: "About Moeen Ul Qadir — Full-Stack Developer | FinTech & Trading Systems Engineer",
         description:
-            "Full stack engineer specialising in Next.js, React, Node.js, DevOps, cloud and AI engineering.",
+            "Full-Stack Developer | FinTech & Trading Systems Engineer | Quantitative Trading Enthusiast with 5+ years of experience building algorithmic trading systems, market-data platforms, backtesting engines, risk-management systems, and FinTech dashboards.",
         locale: "en_US",
         images: [
             {
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "About Moeen Ul Qadir — Full Stack Software Engineer",
+        title: "About Moeen Ul Qadir — Full-Stack Developer | FinTech & Trading Systems Engineer",
         description:
-            "Full stack engineer specialising in Next.js, React, Node.js, DevOps, cloud and AI engineering.",
+            "Full-Stack Developer | FinTech & Trading Systems Engineer | Quantitative Trading Enthusiast with 5+ years of experience building algorithmic trading systems, market-data platforms, backtesting engines, risk-management systems, and FinTech dashboards.",
         images: [`${siteUrl}/assets/self/Moeen.jpg`],
     },
     robots: {
@@ -57,16 +57,30 @@ const aboutJsonLd = {
         "@type": "Person",
         name: profile.name,
         url: siteUrl,
-        jobTitle: "Full Stack Software Engineer",
+        jobTitle: "Full-Stack Developer | FinTech & Trading Systems Engineer | Quantitative Trading Enthusiast",
         worksFor: {
             "@type": "Organization",
             name: "Freelance",
         },
         knowsAbout: [
-            "Full Stack Development",
+            "Full-Stack Development",
+            "FinTech Engineering",
+            "Trading Systems Engineering",
+            "Quantitative Trading",
+            "Algorithmic Trading",
+            "Market-Data Platforms",
+            "Backtesting Engines",
+            "Risk-Management Systems",
+            "FinTech Dashboards",
             "Next.js",
             "React.js",
             "Node.js",
+            "Python",
+            "FastAPI",
+            "MetaTrader 5",
+            "MQL5",
+            "Expert Advisors",
+            "Trading Bots",
             "DevOps",
             "Cloud Infrastructure",
             "AI Engineering",
@@ -94,8 +108,8 @@ export default function AboutPage() {
             <PageHeader
                 eyebrow="About Me"
                 title="The engineer behind"
-                highlight="the code."
-                description="5+ years across full stack development, DevOps, architecture and AI — driven by curiosity and a love for well-built software."
+                highlight="the code — and the markets."
+                description="5+ years across full-stack development, DevOps, architecture, AI, and financial technology — building algorithmic trading systems, market-data platforms, and FinTech dashboards."
             />
 
             <section className="container-page section-space pt-0 lg:pt-4">
@@ -244,6 +258,120 @@ export default function AboutPage() {
 
             <StatsBand />
 
+            {/* Trading Systems & Financial Technology Section */}
+            <section className="border-t border-white/5 bg-ink-900/40 py-20 lg:py-24">
+                <div className="container-page">
+                    <SectionHeading
+                        eyebrow="Specialization"
+                        title="Trading Systems & Financial Technology"
+                        highlight="Where software engineering meets quantitative finance"
+                        description="I specialize in the intersection of software engineering and financial markets — building algorithmic trading systems, market-data platforms, backtesting engines, risk-management systems, and FinTech dashboards for startups, prop firms, and financial technology companies."
+                    />
+                    
+                    <div className="mt-12 grid gap-8 md:grid-cols-2">
+                        <Reveal>
+                            <div className="rounded-2xl border border-white/10 bg-ink-700/60 p-7">
+                                <h3 className="text-lg font-bold text-white mb-4">Expertise Areas</h3>
+                                <ul className="space-y-3">
+                                    <li className="flex items-start gap-3 text-sm text-mist/80">
+                                        <Icon name="checkCircle" size={18} className="mt-0.5 shrink-0 text-gold" />
+                                        <span>Algorithmic trading systems with Python & MQL5</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 text-sm text-mist/80">
+                                        <Icon name="checkCircle" size={18} className="mt-0.5 shrink-0 text-gold" />
+                                        <span>Market-data pipelines & real-time streaming platforms</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 text-sm text-mist/80">
+                                        <Icon name="checkCircle" size={18} className="mt-0.5 shrink-0 text-gold" />
+                                        <span>Backtesting engines & quantitative research tools</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 text-sm text-mist/80">
+                                        <Icon name="checkCircle" size={18} className="mt-0.5 shrink-0 text-gold" />
+                                        <span>Risk-management systems & position sizing algorithms</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 text-sm text-mist/80">
+                                        <Icon name="checkCircle" size={18} className="mt-0.5 shrink-0 text-gold" />
+                                        <span>FinTech dashboards for crypto, forex, and equities</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 text-sm text-mist/80">
+                                        <Icon name="checkCircle" size={18} className="mt-0.5 shrink-0 text-gold" />
+                                        <span>MetaTrader 5 Expert Advisors & custom indicators</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </Reveal>
+                        
+                        <Reveal delay={0.1}>
+                            <div className="rounded-2xl border border-white/10 bg-ink-700/60 p-7">
+                                <h3 className="text-lg font-bold text-white mb-4">Who I Work With</h3>
+                                <ul className="space-y-3">
+                                    <li className="flex items-start gap-3 text-sm text-mist/80">
+                                        <Icon name="briefcase" size={18} className="mt-0.5 shrink-0 text-gold" />
+                                        <span>FinTech companies & financial technology startups</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 text-sm text-mist/80">
+                                        <Icon name="briefcase" size={18} className="mt-0.5 shrink-0 text-gold" />
+                                        <span>Trading platforms & crypto exchanges</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 text-sm text-mist/80">
+                                        <Icon name="briefcase" size={18} className="mt-0.5 shrink-0 text-gold" />
+                                        <span>Prop trading firms & quantitative research teams</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 text-sm text-mist/80">
+                                        <Icon name="briefcase" size={18} className="mt-0.5 shrink-0 text-gold" />
+                                        <span>Algorithmic trading companies & proprietary trading desks</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 text-sm text-mist/80">
+                                        <Icon name="briefcase" size={18} className="mt-0.5 shrink-0 text-gold" />
+                                        <span>Brokerage platforms & market-data providers</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 text-sm text-mist/80">
+                                        <Icon name="briefcase" size={18} className="mt-0.5 shrink-0 text-gold" />
+                                        <span>Companies building financial dashboards & trading infrastructure</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </Reveal>
+                    </div>
+
+                    <div className="mt-10 grid gap-4 sm:grid-cols-3">
+                        <Reveal delay={0.15}>
+                            <Link
+                                href="/trading/mt5"
+                                className="group flex items-center gap-3 rounded-xl border border-white/10 bg-ink-700/60 p-5 transition-colors hover:border-gold/40"
+                            >
+                                <Icon name="robot" size={20} className="text-gold" />
+                                <span className="text-sm font-semibold text-white group-hover:text-gold transition-colors">
+                                    MT5/MQL5 Development
+                                </span>
+                            </Link>
+                        </Reveal>
+                        <Reveal delay={0.2}>
+                            <Link
+                                href="/trading/python"
+                                className="group flex items-center gap-3 rounded-xl border border-white/10 bg-ink-700/60 p-5 transition-colors hover:border-gold/40"
+                            >
+                                <Icon name="python" size={20} className="text-gold" />
+                                <span className="text-sm font-semibold text-white group-hover:text-gold transition-colors">
+                                    Python Trading & Quant Research
+                                </span>
+                            </Link>
+                        </Reveal>
+                        <Reveal delay={0.25}>
+                            <Link
+                                href="/trading/dashboards"
+                                className="group flex items-center gap-3 rounded-xl border border-white/10 bg-ink-700/60 p-5 transition-colors hover:border-gold/40"
+                            >
+                                <Icon name="chartInfographic" size={20} className="text-gold" />
+                                <span className="text-sm font-semibold text-white group-hover:text-gold transition-colors">
+                                    FinTech & Market Dashboards
+                                </span>
+                            </Link>
+                        </Reveal>
+                    </div>
+                </div>
+            </section>
+
             <section className="container-page section-space">
                 <SectionHeading
                     eyebrow="Experience"
@@ -301,7 +429,11 @@ export default function AboutPage() {
                 />
                 <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
                     {timelineFacts.map((m) => (
-                        <Milestone key={m.year} year={m.year} label={m.label} />
+                        <Milestone
+                            key={`${m.year}-${m.label}`}
+                            year={m.year}
+                            label={m.label}
+                        />
                     ))}
                 </div>
                 <Reveal className="mt-12 text-center">

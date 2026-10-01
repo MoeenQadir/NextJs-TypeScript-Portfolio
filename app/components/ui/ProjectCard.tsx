@@ -34,7 +34,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                     <h3 className="text-xl font-bold text-white transition-colors group-hover:text-gold">
                         {project.title}
                     </h3>
-                    <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-soft">
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-soft line-clamp-3">
                         {project.summary}
                     </p>
 
@@ -54,7 +54,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                             href={`/projects/${project.slug}`}
                             className="inline-flex items-center gap-2 text-sm font-semibold text-gold transition-colors hover:text-white"
                         >
-                            View Case Study
+                            View
                             <Icon
                                 name="arrowUpRight"
                                 size={16}

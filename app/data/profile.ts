@@ -2,18 +2,21 @@ export const profile = {
     name: "Muhammad Moeen Ul Qadir",
     shortName: "Moeen",
     firstName: "Moeen",
-    role: "Full Stack Software Engineer",
+    role: "Full-Stack Developer | FinTech & Trading Systems Engineer | Quantitative Trading Enthusiast",
     heroRoles: [
-        "Full Stack Developer",
+        "Full stack software engineer",
+        "FinTech Engineer",
+        "Trading Systems Engineer",
+        "Quantitative Trading Enthusiast",
         "DevOps Engineer",
         "Software Architect",
         "AI Engineer",
     ],
     tagline:
-        "I design, build and ship production-grade software — from pixel-perfect interfaces to cloud infrastructure and AI-powered products.",
-    bio: "Full Stack Software Engineer with 5+ years of experience transforming ideas into scalable, high-performance products. Specializing in Next.js, React.js, Node.js, cloud infrastructure (AWS, Docker, CI/CD) and AI/LLM integrations. I bridge design, architecture and engineering to deliver software that businesses love and users trust.",
+        "Building Financial Software, Trading Systems & Market Intelligence Platforms. I combine full-stack software engineering with practical financial-market knowledge to build trading tools, market-data platforms, algorithmic trading systems, analytics dashboards and financial applications.",
+    bio: "Full-Stack Developer | FinTech & Trading Systems Engineer | Quantitative Trading Enthusiast with 5+ years of experience transforming ideas into scalable, high-performance products. Specializing in Next.js, React.js, Node.js, Python, cloud infrastructure (AWS, Docker, CI/CD), AI/LLM integrations, and financial technology. I build algorithmic trading systems, market-data pipelines, backtesting engines, risk-management engines, and FinTech dashboards. I bridge software engineering, quantitative research, and financial markets to deliver production-grade trading technology.",
     about:
-        "I am a Full Stack Software Engineer who lives at the intersection of product design, software architecture and engineering execution. Over the last 5+ years I have worked with startups and international teams to ship web platforms, SaaS dashboards, legal-tech applications, e-commerce admin systems and AI-powered tools. I care deeply about clean architecture, SOLID principles, developer experience and shipping quickly without compromising quality.",
+        "I am a Full-Stack Developer specializing in FinTech, Financial Markets & Trading Systems Engineering. Over the last 5+ years I have worked at the intersection of software engineering, quantitative research, and financial markets — building algorithmic trading systems, market-data platforms, backtesting engines, risk-management systems, and FinTech dashboards for startups and international teams.\n\nMy expertise spans the complete trading technology stack: from MetaTrader 5 (MQL5) Expert Advisors and Python trading bots to real-time market-data dashboards built with Next.js, WebSockets, and modern frontend frameworks. I design systems for research, backtesting, paper trading, and controlled live environments — always emphasizing clean architecture, risk management, and engineering rigor.\n\nI care deeply about clean architecture, SOLID principles, developer experience, and shipping production-grade financial software without compromising quality.",
     email: "myselfxdeveloper@gmail.com",
     phone: "+92 344 1586424",
     phoneHref: "tel:+923441586424",
@@ -38,8 +41,8 @@ export const profile = {
     stats: [
         { label: "Years Experience", value: "5+" },
         { label: "Projects Delivered", value: "40+" },
-        { label: "Technologies Mastered", value: "50+" },
-        { label: "Happy Clients", value: "25+" },
+        { label: "Trading Systems Built", value: "10+" },
+        { label: "Technologies Mastered", value: "60+" },
     ],
     certifications: [
         "Full Stack Web Development Bootcamp 2024 – MERN Stack (Udemy)",

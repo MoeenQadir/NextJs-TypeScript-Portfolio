@@ -112,6 +112,40 @@ export const skillCategories: SkillCategory[] = [
             { name: "Debugging & Logging", level: 90, icon: "debug" },
         ],
     },
+    {
+        title: "Trading Technology",
+        description:
+            "Building algorithmic trading systems, market-data platforms, and financial technology solutions.",
+        accent: "#fbbf24",
+        icon: "ai",
+        skills: [
+            { name: "MetaTrader 5 / MQL5", level: 85, icon: "bug" },
+            { name: "Expert Advisors (EAs)", level: 85, icon: "robot" },
+            { name: "Trading Bots", level: 85, icon: "bolt" },
+            { name: "Backtesting Engines", level: 85, icon: "chartInfographic" },
+            { name: "Paper Trading Systems", level: 80, icon: "terminal" },
+            { name: "Risk-Management Engines", level: 85, icon: "shieldLock" },
+            { name: "Position Sizing Systems", level: 80, icon: "boxModel2" },
+            { name: "Trade Execution Integrations", level: 80, icon: "send" },
+        ],
+    },
+    {
+        title: "Financial Markets",
+        description:
+            "Practical knowledge of forex, commodities, indices and crypto markets with focus on price action and market structure.",
+        accent: "#8b5cf6",
+        icon: "globe",
+        skills: [
+            { name: "Forex Market Analysis", level: 85, icon: "terminal" },
+            { name: "Gold/XAUUSD Analysis", level: 80, icon: "gold" },
+            { name: "NASDAQ/US100/NDX Analysis", level: 80, icon: "chartInfographic" },
+            { name: "Price Action Trading", level: 85, icon: "zap" },
+            { name: "Market Structure Analysis", level: 85, icon: "boxModel2" },
+            { name: "Break of Structure (BOS)", level: 80, icon: "zap" },
+            { name: "Market Structure Shift (MSS)", level: 80, icon: "refreshCw" },
+            { name: "Liquidity Sweeps", level: 80, icon: "waves" },
+        ],
+    },
 ];
 
 export const technologies = [
@@ -143,4 +177,24 @@ export const technologies = [
     "n8n",
     "MongoDB",
     "GraphQL",
+    // FinTech & Trading
+    "Python",
+    "MQL5",
+    "MetaTrader 5",
+    "Algorithmic Trading",
+    "Quantitative Trading",
+    "FinTech",
+    "Financial Software",
+    "Trading Systems",
+    "Market Data",
+    "Backtesting",
+    "Risk Management",
+    "Forex",
+    "Crypto Trading",
+    "Stock Trading",
+    "Trading Bots",
+    "Expert Advisors",
+    "FastAPI",
+    "WebSockets",
+    "Time-Series Analysis",
 ];

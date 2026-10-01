@@ -1,0 +1,8 @@
+yarn run v1.22.22
+$ next dev
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+[?25h
+Done in 5.40s.

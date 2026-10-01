@@ -128,6 +128,27 @@ const map: Record<string, IconType> = {
     eslint: Si.SiEslint,
     debug: Tb.TbBug,
     spark: Tb.TbSparkles,
+
+    // Trading & Financial Markets
+    python: Tb.TbBrandPython,
+    gold: Tb.TbCurrencyDollar,
+    waves: Tb.TbWaveSine,
+    target: Tb.TbTarget,
+    clipboardList: Tb.TbClipboardList,
+    scale: Tb.TbScale,
+    history: Fi.FiClock,
+    forward: Fi.FiArrowRight,
+    chartNoAxesCombined: Tb.TbChartScatter,
+    chartInfographic: Tb.TbChartInfographic,
+    botts: Tb.TbCurrencyBitcoin,
+    wallet: Tb.TbWallet,
+    finance: Tb.TbCurrencyDollar,
+    chartLine: Tb.TbChartLine,
+    exchange: Tb.TbExchange,
+    blockchain: Tb.TbBlocks,
+    signal: Tb.TbSignal5G,
+    analytics: Tb.TbChartAreaLine,
+    reports: Tb.TbReport,
 };
 
 export default function Icon({ name, className, size = 20, color }: IconProps) {

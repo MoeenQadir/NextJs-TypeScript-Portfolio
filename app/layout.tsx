@@ -4,7 +4,6 @@ import { Poppins } from "next/font/google";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import CustomCursor from "./components/ui/CustomCursor";
-import Breadcrumb from "./components/ui/Breadcrumb";
 import ScrollProgress from "./components/ui/ScrollProgress";
 import { ScrollToTop } from "./components/ui/ScrollProgress";
 import { profile } from "./data/profile";
@@ -173,7 +172,6 @@ export default function RootLayout({
                 </a>
                 <CustomCursor />
                 <Navbar />
-                <Breadcrumb />
                 <ScrollProgress />
                 <main id="main">{children}</main>
                 <Footer />

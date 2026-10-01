@@ -11,17 +11,17 @@ import { profile } from "../data/profile";
 const siteUrl = "https://www.moeen.site";
 
 export const metadata: Metadata = {
-    title: "Services",
+    title: "Services — Moeen Ul Qadir | Full-Stack Developer & FinTech Engineer",
     description:
-        "Professional services from Moeen Ul Qadir: full stack development, DevOps & cloud, software architecture & design, AI engineering, API integration, and performance & security optimization.",
+        "Professional services from Moeen Ul Qadir: full-stack development, DevOps & cloud, software architecture, AI engineering, API integration, performance & security optimization, plus specialized FinTech & trading systems development including algorithmic trading systems, market-data platforms, backtesting engines, and FinTech dashboards.",
     alternates: { canonical: "/services" },
     openGraph: {
         type: "website",
         url: `${siteUrl}/services`,
         siteName: "Moeen Ul Qadir Portfolio",
-        title: "Services — Moeen Ul Qadir",
+        title: "Services — Moeen Ul Qadir | Full-Stack Developer & FinTech Engineer",
         description:
-            "Full stack development, DevOps & cloud, software architecture, AI engineering and more.",
+            "Full-stack development, DevOps & cloud, software architecture, AI engineering, plus specialized FinTech & trading systems development including algorithmic trading systems, market-data platforms, backtesting engines, and FinTech dashboards.",
         locale: "en_US",
         images: [
             {
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Services — Moeen Ul Qadir",
+        title: "Services — Moeen Ul Qadir | Full-Stack Developer & FinTech Engineer",
         description:
-            "Full stack development, DevOps & cloud, software architecture, AI engineering and more.",
+            "Full-stack development, DevOps & cloud, software architecture, AI engineering, plus specialized FinTech & trading systems development including algorithmic trading systems, market-data platforms, backtesting engines, and FinTech dashboards.",
         images: [`${siteUrl}/assets/self/MOON.jpg`],
     },
     robots: {
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 const servicesJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Software Engineering Services",
+    name: "Full-Stack & FinTech Engineering Services",
     provider: {
         "@type": "Person",
         name: profile.name,
@@ -63,7 +63,7 @@ const servicesJsonLd = {
     },
     hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: "Software Engineering Services",
+        name: "Full-Stack & FinTech Engineering Services",
         itemListElement: services.map((service, index) => ({
             "@type": "Offer",
             position: index + 1,
@@ -173,7 +173,7 @@ export default function ServicesPage() {
                 eyebrow="Services"
                 title="Everything your product needs,"
                 highlight="under one roof."
-                description="Full stack development, DevOps & cloud infrastructure, software architecture and AI engineering — delivered with senior-level quality."
+                description="Full-stack development, DevOps & cloud, software architecture, AI engineering, plus specialized FinTech & trading systems — algorithmic trading systems, market-data platforms, backtesting engines, and FinTech dashboards — delivered with senior-level quality."
             />
 
             <section className="container-page section-space pt-0">

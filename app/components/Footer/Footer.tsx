@@ -19,9 +19,9 @@ export default function Footer() {
                             </span>
                         </Link>
                         <p className="mt-5 max-w-sm text-sm leading-relaxed text-slate-soft">
-                            Full Stack Software Engineer crafting scalable web apps,
-                            cloud infrastructure and AI-powered products for businesses
-                            around the world.
+                            Full-Stack Developer | FinTech & Trading Systems Engineer | Quantitative Trading Enthusiast.
+                            Building algorithmic trading systems, market-data platforms, backtesting engines,
+                            risk-management systems, and FinTech dashboards for businesses worldwide.
                         </p>
                         <div className="mt-6 flex gap-3">
                             {socialLinks.map((s) => (

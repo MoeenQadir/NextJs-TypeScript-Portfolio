@@ -7,7 +7,7 @@ import type { SkillCategory } from "../../data/skills";
 
 export default function SkillCard({ category }: { category: SkillCategory }) {
     return (
-        <TiltCard className="flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-700 p-8 glow-border">
+        <TiltCard className="flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-700 p-8 glow-border min-h-[520px]">
             <div className="flex items-center gap-4">
                 <span
                     className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl"
@@ -27,7 +27,7 @@ export default function SkillCard({ category }: { category: SkillCategory }) {
                 {category.description}
             </p>
 
-            <div className="mt-6 flex">
+            <div className="mt-6 flex-1">
                 <ul className="w-full space-y-3">
                     {category.skills.map((skill, i) => (
                         <li key={skill.name}>
