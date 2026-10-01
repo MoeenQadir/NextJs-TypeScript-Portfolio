@@ -107,7 +107,7 @@ export default function SkillsPage() {
                 eyebrow="Skills & Tools"
                 title="A battle-tested"
                 highlight="technology arsenal."
-                description="50+ technologies and tools across six disciplines — continuously evolving as the industry moves."
+                description="50+ technologies and tools across eight disciplines — continuously evolving as the industry moves."
             />
 
             <section className="container-page pb-16">
@@ -120,43 +120,7 @@ export default function SkillsPage() {
                             </TiltCard>
                         </StaggerItem>
                     ))}
-                </Stagger>
-                
-                {/* Trading Technology Highlight */}
-                <Reveal className="mt-16">
-                    <SectionHeading
-                        align="left"
-                        eyebrow="Specialization"
-                        title="Trading Systems & Financial Technology"
-                        highlight="Specialized expertise for FinTech and algorithmic trading"
-                    />
-                    <p className="mt-6 text-lg leading-relaxed text-slate-soft max-w-2xl">
-                        Beyond traditional full-stack development, I specialize in the intersection of software engineering and financial markets — building algorithmic trading systems, market-data platforms, backtesting engines, risk-management systems, and FinTech dashboards.
-                    </p>
-                    <div className="mt-8 flex flex-wrap gap-4">
-                        <Link
-                            href="/trading/mt5"
-                            className="glass inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:border-gold/40"
-                        >
-                            <Icon name="robot" size={16} />
-                            MT5/MQL5 Development
-                        </Link>
-                        <Link
-                            href="/trading/python"
-                            className="glass inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:border-gold/40"
-                        >
-                            <Icon name="python" size={16} />
-                            Python Trading
-                        </Link>
-                        <Link
-                            href="/trading/dashboards"
-                            className="glass inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:border-gold/40"
-                        >
-                            <Icon name="chartInfographic" size={16} />
-                            FinTech Dashboards
-                        </Link>
-                    </div>
-                </Reveal>
+</Stagger>
 
                 <Reveal className="mt-12">
                     <Marquee />
@@ -167,7 +131,7 @@ export default function SkillsPage() {
                 <div className="container-page">
                     <SectionHeading
                         eyebrow="Expertise"
-                        title="Six disciplines,"
+                        title="Eight disciplines,"
                         highlight="one engineer."
                         description="Each category represents real production experience — not just familiarity."
                     />
