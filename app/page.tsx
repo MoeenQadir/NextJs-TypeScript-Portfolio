@@ -120,66 +120,6 @@ export default function Home() {
 
             <StatsBand />
 
-            {/* FinTech & Trading Systems Positioning */}
-            <section className="container-page section-space">
-                <Reveal>
-                    <SectionHeading
-                        eyebrow="Specialization"
-                        title="Trading Systems & Financial Technology"
-                        highlight="Specialized expertise for FinTech and algorithmic trading"
-                        description="I combine full-stack software engineering with practical financial-market knowledge to build trading tools, market-data platforms, algorithmic trading systems, analytics dashboards and financial applications."
-                    />
-                </Reveal>
-                
-                <Reveal delay={0.1}>
-                    <div className="grid gap-8 lg:grid-cols-3">
-                        {/* Software Engineering Column */}
-                        <div className="space-y-4">
-                            <h3 className="text-xl font-bold text-white mb-2">Software Engineering</h3>
-                            <p className="text-sm text-mist/80 leading-relaxed">
-                                Next.js • React • TypeScript • Node.js • Python • FastAPI • 
-                                PostgreSQL • Redis • Docker • Docker Compose • CI/CD • 
-                                GitHub Actions • Cloudflare • Vercel
-                            </p>
-                        </div>
-                        
-                        {/* Trading Technology Column */}
-                        <div className="space-y-4">
-                            <h3 className="text-xl font-bold text-white mb-2">Trading Technology</h3>
-                            <p className="text-sm text-mist/80 leading-relaxed">
-                                MetaTrader 5 • MQL5 • Expert Advisors • Trading Bots • 
-                                Backtesting Engines • Paper Trading • Risk Management • 
-                                Position Sizing • Trade Execution • Market-Data Pipelines
-                            </p>
-                        </div>
-                        
-                        {/* Financial Markets Column */}
-                        <div className="space-y-4">
-                            <h3 className="text-xl font-bold text-white mb-2">Financial Markets</h3>
-                            <p className="text-sm text-mist/80 leading-relaxed">
-                                Forex • Gold/XAUUSD • NASDAQ/US100 • Crypto • 
-                                Price Action • Market Structure • Supply/Demand • 
-                                Volume Analysis • Momentum • Risk/Reward Modeling
-                            </p>
-                        </div>
-                    </div>
-                </Reveal>
-
-                <Reveal delay={0.2}>
-                    <Link
-                        href="/skills"
-                        className="group mt-9 inline-flex items-center gap-2 text-base font-semibold text-gold transition-colors hover:text-white"
-                    >
-                        View Full Skill Matrix
-                        <Icon
-                            name="arrowRight"
-                            size={18}
-                            className="transition-transform group-hover:translate-x-1"
-                        />
-                    </Link>
-                </Reveal>
-            </section>
-
             <section className="container-page section-space" id="about">
                 <div className="grid items-center gap-14 lg:grid-cols-2">
                     <div className="relative order-2 lg:order-1">
