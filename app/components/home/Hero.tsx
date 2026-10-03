@@ -100,11 +100,7 @@ export default function Hero() {
                         variants={itemVariants}
                         className="mt-8 max-w-2xl text-base leading-relaxed text-slate-soft sm:text-lg"
                     >
-                        I build Financial Software, Trading Systems & Market Intelligence Platforms — 
-                        combining full-stack engineering with practical financial-market knowledge. 
-                        5+ years delivering algorithmic trading systems, market-data pipelines, 
-                        backtesting engines, risk-management systems, and FinTech dashboards 
-                        for startups, prop firms, and financial technology companies.
+                       I engineer production-grade software end to end — full stack products, cloud & DevOps infrastructure and AI-powered features. 5+ years of turning ambitious ideas into fast, secure and scalable systems.
                     </motion.p>
 
                     <motion.div
@@ -175,7 +171,7 @@ export default function Hero() {
                                 delay: 0.5,
                                 ease: [0.22, 1, 0.36, 1],
                             }}
-                            className="group relative h-[34rem] w-[28rem] max-w-full overflow-hidden rounded-[2.5rem] bg-ink-700/70 backdrop-blur"
+                            className="group relative h-[34rem] w-[28rem] max-w-full overflow-hidden rounded-[1.8rem] bg-ink-700/70 backdrop-blur"
                         >
                             <Image
                                 src="/assets/self/MOON.jpg"

@@ -5,7 +5,7 @@ import { motion, useMotionValue, useScroll, useTransform } from "framer-motion";
 
 export default function ScrollProgress() {
     const { scrollYProgress } = useScroll();
-    const progress = useTransform(scrollYProgress, [0, 1], [0, 100]);
+    const progress = useTransform(scrollYProgress, [0, 1], [0, 1]);
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
