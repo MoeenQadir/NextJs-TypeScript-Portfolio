@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#grad1)" rx="20"/>
+  <circle cx="100" cy="80" r="40" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="300" cy="220" r="40" fill="rgba(255,255,255,0.2)"/>
+  <line x1="100" y1="80" x2="300" y2="220" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">Python</text>
+  <text x="200" y="175" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Strategy Engine</text>
+  <text x="200" y="200" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">↓</text>
+  <text x="200" y="220" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">MT5</text>
+  <text x="200" y="240" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Execution Layer</text>
+  <rect x="50" y="260" width="300" height="30" fill="rgba(255,255,255,0.1)" rx="5"/>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Hybrid Architecture • Automated Signal Generation • Risk Management</text>
+</svg>
